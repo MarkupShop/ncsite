@@ -1,0 +1,189 @@
+.home{
+
+	.slideshow{
+		background: url('../assets/slider-bg.jpg') no-repeat center;
+		background-size: cover;
+		@include clearfix;
+	
+		.slideshow-texture{
+			background: url('../assets/slider-texture-bg.png') no-repeat center;
+			background-size: cover;
+			@include clearfix;
+		}
+	
+		.slideshow-content{
+			background: rgba(125,5,5,.8);
+			float: right;
+			width: 36.677966101695%;
+			margin: 150px 0;
+			padding: 2em 2%;
+			position: relative;
+			color: #fff;
+		}
+	
+		.slideshow-title{
+			font-family: "Open Sans";
+			font-weight: 600;
+			margin-bottom: 1em;
+		}
+	
+		.slideshow-progress{
+			margin-top: -2.5em;
+			text-align: center;
+			margin-bottom: 1em;
+	
+			li{
+				display: inline-block;
+				text-indent: -9999em;
+				background: url('../assets/slider-progress-sprite.png') no-repeat 0 0;
+				height: 14px;
+				width: 14px;
+	
+				&.active{
+					background-position-x: -14px;
+				}
+			}
+		}
+	}
+	
+	.content{
+		background: #f1f1f1 url('../assets/home-content-bg.png') no-repeat bottom left;
+		border-bottom: 4px solid $red;
+		background-size: cover;
+		@include pie-clearfix;
+	}
+	
+	.content-title{
+		font-family: "Raleway";
+		text-transform: uppercase;
+		font-size: 2.25em;
+		margin-bottom: 1em;
+	}
+	
+	.main-content{
+		width: 49.322033898305%;
+		float: left;
+		padding: 2em 8% 2em 2%;
+	
+		.content-title{
+			margin-top: 3.5%;
+		}
+	
+		h2, h3, p{
+			color: #153f60;
+		}
+	}
+	
+	.sidebar-content{
+		width: 40.677966101695%;
+		float: right;
+	}
+	
+	.cutout-overlay{
+	    margin-top: -5.5em;
+	  	height: 56px;
+	 	background: #f1f1f1;
+	 	width: 300%;
+	 	margin-left: -184%;
+	
+	
+		.button{
+			float: right;
+		}
+	}
+	
+	.events{
+		background: $blue;
+		padding: 5%;
+		position: relative;
+		color: #fff;
+	
+		.event-title{
+			text-transform: uppercase;
+		}
+	
+		.event{
+			margin-bottom: 1em;
+	
+			.button{
+				margin-top: 1em;
+				position: relative;
+				float: right;
+				right: -5.5%;
+			}
+		}
+	
+		.more-events{
+			margin-top: 6em;
+	
+			a{
+				color: #fff;
+				text-decoration: none;
+			}
+	
+			.event-title{
+				margin-bottom: 1.5em;
+			}
+		}
+	}
+	
+	.become-a-member{
+		background: #1d2c5e;
+		padding: 5% 5% 0;
+		color: #fff;
+		@include clearfix;
+	
+	
+			.button{
+				margin-top: 1em;
+				position: relative;
+				float: right;
+				right: -5.5%;
+			}
+	}
+	
+	.sponsors{
+		padding: 3em 0;
+		@include clearfix;
+		border-bottom: 4px solid $red;
+	
+		.wrapper{
+			position: relative;
+		}
+	
+		.button{
+			position: absolute;
+			top: 0;
+			right: 0;
+			margin-top: -1em;
+		}
+	
+		.logos{
+			padding-top: 1em;
+	
+			li{
+				float: left;
+				width: 22%;
+				margin: 2em 1.5%;
+			}
+		}
+	
+	}
+	
+	.president{
+		padding: 3em 0;
+		background: #f1f1f1;
+		border-bottom: 4px solid $red;
+		@include clearfix;
+	
+		.president-content{
+			float: left;
+			padding-right: 8%;
+		}
+	
+		img{
+			float: right;
+		}
+	
+	}
+}//.home	
