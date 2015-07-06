@@ -8,23 +8,32 @@ h3{
 	line-height: 1.4em;
 }
 
-p{
+p, dl{
 	line-height: 1.4em;
 	font-family: "Open Sans";
 	font-weight: 300;
 
-	+ p{
+	+ p, + ul{
 		margin-top: 1.4em;
 	}
 }
 
 li{
-	line-height: 1.4em;
+	line-height: 1.8em;
 	font-family: "Open Sans";
 	font-weight: 300;
-	text-transform: uppercase;
+	list-style: disc;
+	margin-left: 3em;
+	padding-left: .5em;
 }
  
 a{
 	color: $blue;
+}
+
+.content-title, .page-title{
+	font-family: "Raleway";
+	text-transform: uppercase;
+	font-size: 2.25em;
+	margin-bottom: 1em;
 }

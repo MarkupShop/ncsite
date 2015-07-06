@@ -6,6 +6,10 @@ $red: #cc3333;
 
 /* END VARIABLES */
 
+img{
+	vertical-align: bottom;
+}
+
 .wrapper{
 	width: 80%;
 	max-width: 1180px;
@@ -38,6 +42,14 @@ $red: #cc3333;
 	&:hover{
 		background: saturate( $red, 25%);
 	}
+}
+
+.float-left{
+	float: left;
+}
+
+.self-clear{
+	@include pie-clearfix;
 }
 
 @media screen and (max-width: 1300px){
