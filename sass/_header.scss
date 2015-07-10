@@ -47,8 +47,15 @@
 }
 
 .primary-nav{
+
+	> ul > li{
+			padding-bottom: 1em;
+	
+	}
 	ul{
 		float: right;
+
+
 
 		li{
 			display: inline-block;
@@ -57,10 +64,16 @@
 			position: relative;
 			text-transform: uppercase;
 
+			a{ color: $dkblue; text-decoration: none;}
+
 			&:hover{
 
 				.dropdown{ display: block; }
 
+			}
+
+			.dropdown:hover{
+				display: block;
 			}
 		}
 
@@ -107,4 +120,27 @@
 			}
 		}
 	}
+}
+
+@media screen and (max-width: 1200px){
+
+	.site-title{
+		float: none;
+		margin: 0 auto;
+	}
+
+	.primary-nav ul{
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+
+		li{
+			margin-left: 1.5em;
+		}
+	}
+
+}
+
+@media screen and (max-width: 860px){
+	.primary-nav, .utility-nav{ display: none; }
 }

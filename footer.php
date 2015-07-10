@@ -6,15 +6,11 @@
 	
 		<h2 class="content-title">Footer TBD</h2>
 
-		<h3>Get in contact with our design team</h3>
-
-		<p>Lipsum...</p>
-
-		<a class="button" href="#">Get in Touch</a>
-
 	</div>
 
 </footer>
+
+<?php do_action('wp_footer'); ?>
 
 </body>
 

@@ -4,6 +4,7 @@
 <head>
 	<title>NCSITE - NC Section : Institute of Transportation Engineers</title>
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/stylesheets/screen.css" />
+	<?php do_action('wp_head'); ?>
 </head>
 
 <body>
@@ -29,9 +30,9 @@
 		
 			<nav class="primary-nav">
 				<ul>
-					<li>About
+					<li><a href="<?php echo bloginfo('url'); ?>/about">About</a>
 						<ul class="dropdown">
-							<li>Item 1</li>
+							<li><a href="<?php echo bloginfo('url'); ?>/about/ncsite-overview">NCSite Overview</a></li>
 							<li>Item 2</li>
 							<li>Item 3</li>
 						</ul>

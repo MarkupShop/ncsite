@@ -99,8 +99,6 @@
 
 		<h2 class="content-title">Our Sponsors</h2>
 	
-		<a class="button">Sponsor NCSITE</a>
-	
 		<ul class="logos">
 			<li><img src="<?php echo bloginfo('template_directory'); ?>/assets/atkins-logo.png" alt="Atkins" /></li>
 			<li><img src="<?php echo bloginfo('template_directory'); ?>/assets/atkins-logo.png" alt="Atkins" /></li>
@@ -111,6 +109,8 @@
 			<li><img src="<?php echo bloginfo('template_directory'); ?>/assets/atkins-logo.png" alt="Atkins" /></li>
 			<li><img src="<?php echo bloginfo('template_directory'); ?>/assets/atkins-logo.png" alt="Atkins" /></li>
 		</ul>
+	
+		<a class="button">Sponsor NCSITE</a>
 
 	</div><!--.wrapper-->
 
@@ -120,9 +120,11 @@
 
 	<div class="wrapper">
 
-		<div class="president-content">
+		<h2 class="content-title">Meet the President</h2>
 
-			<h2 class="content-title">Meet the President</h2>
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/president.jpg" />
+
+		<div class="president-content">
 	
 			<h3>Christa Greene, PE</h3>
 	
@@ -130,7 +132,7 @@
 
 		</div>
 	
-		<img src="http://placehold.it/200x200" />
+		
 
 	</div><!--.wrapper-->
 

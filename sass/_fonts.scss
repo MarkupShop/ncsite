@@ -1,6 +1,14 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:200);
+@import url(http://fonts.googleapis.com/css?family=Raleway:100,200);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700italic,700,300,600);
 
+h2{
+	font-family: "Raleway";
+	line-height: 1.4em;
+	text-transform: uppercase;
+	font-weight: 100;  
+	font-size: 2.25em;
+	margin-bottom: .5em!important;
+}
 
 h3{
 	font-family: "Open Sans";
@@ -29,6 +37,17 @@ li{
  
 a{
 	color: $blue;
+}
+
+em{
+	font-style: italic;
+	font-family: georgia, serif;
+	font-weight: 100;
+}
+
+strong{
+	font-weight: bold;
+	font-size: .9em;
 }
 
 .content-title, .page-title{

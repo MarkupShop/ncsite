@@ -1,4 +1,5 @@
 .home{
+	overflow: hidden;
 
 	.slideshow{
 		background: url('../assets/slider-bg.jpg') no-repeat center;
@@ -25,6 +26,7 @@
 			font-family: "Open Sans";
 			font-weight: 600;
 			margin-bottom: 1em;
+			font-size: 1.4em;
 		}
 	
 		.slideshow-progress{
@@ -168,6 +170,8 @@
 				list-style: none;
 				padding: 0;
 				margin: 2em 1.5%;
+
+				img{ width: 100%;}
 			}
 		}
 	
@@ -180,13 +184,99 @@
 		@include clearfix;
 	
 		.president-content{
-			float: left;
-			padding-right: 8%;
+			float: right;
+			width: 85%;
 		}
 	
 		img{
-			float: right;
+			float: left;
+			width: 12%;
+			margin-right: 3%;
 		}
 	
 	}
+
+	@media screen and (max-width: 860px) {
+
+		.slideshow{
+			background: #fff;
+
+			.slideshow-content{
+				float: none;
+  				position: static;
+  				width: 110%;
+  				margin: 0 0 0 -5%;
+  				padding: 4em 2em;
+  				box-sizing: border-box;
+  				background: $red;
+			}
+
+			.slideshow-progress{
+				display: none;
+			}
+		}
+
+		.sidebar-content, .main-content{
+			float: none;
+			width: 100%;
+		}
+
+		.cutout-overlay{
+			margin: 0 0 2em;
+			width: 100%;
+			height: auto;
+			text-align: right;
+
+			.button{ float: none; }
+		}
+
+		.president{
+			img{
+				width: 22%;
+			}
+
+			.president-content{
+				width: 75%;
+			}
+		}
+	
+
+}
+
+@media screen and (max-width: 600px){
+
+	.sponsors{
+		.button{
+			position: static;
+			margin-top: 1em;
+			float: right;
+		}
+	}
+
+}
+
+@media screen and (max-width: 400px){
+	.president{
+		img{
+			width: 80%;
+			margin: 0 auto 1em;
+			float: none;
+			display: block;
+		}
+
+		.president-content{
+			width: 100%;
+			text-align: center;
+
+		}
+	}
+
+	.content-title{
+		text-align: center;
+		font-size: 1.75em;
+	}
+}
+
 }//.home	
+
+
