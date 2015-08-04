@@ -6,7 +6,7 @@
 
 		<?php 
 
-		$cat = get_cat_id();
+		$cat = get_cat_id(single_cat_name());
 		wp_list_categories( 'child_of', $cat );
 
 		//GET ID OF TOP-LEVEL PAGE
