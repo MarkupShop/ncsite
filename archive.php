@@ -23,8 +23,10 @@ include('breadcrumbs.php');
 
 	<article>
 
-		<h3 class="article-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-		<h4 class="cat-name"><?php the_category(); ?></h4>
+		<div class="article-meta">
+			<h3 class="article-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+			<?php the_category(); ?>
+		</div>
 
 		<?php the_excerpt(); ?>
 
