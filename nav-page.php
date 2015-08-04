@@ -8,8 +8,7 @@
 		<h3><?php single_cat_title(); ?></h3>
 		<?php
 		$cat = get_cat_id(single_cat_title('', false));
-		print_r($cat);
-		wp_list_categories( array('child_of' => $cat ));
+		wp_list_categories( array('child_of' => $cat, 'title_li' => '' ));
 
 		//GET ID OF TOP-LEVEL PAGE
 		$parent = array_reverse(get_post_ancestors($post->ID));
