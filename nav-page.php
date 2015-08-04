@@ -6,7 +6,7 @@
 
 		<h3>Blog</h3>
 		<?php
-		wp_list_categories( array('depth' => 1));
+		wp_list_categories( array('depth' => 1, 'title_li' => ''));
 
 		?>
 		
