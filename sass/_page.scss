@@ -18,6 +18,14 @@
 	
 				.article-title{
 					margin: 0;
+
+					a{
+						text-decoration: none;
+
+						&:hover{
+							text-decoration: underline;
+						}
+					}
 				}
 	
 				.post-categories{
@@ -29,7 +37,14 @@
     					text-transform: none;
     					font-size: .8em;
 
-    					a{ color: #333; text-decoration: none;}
+    					a{ 
+    						color: #333; 
+    						text-decoration: none;
+
+    						&:hover{
+    							text-decoration: underline;
+    						}
+    					}
 					}
 				}
 			}
