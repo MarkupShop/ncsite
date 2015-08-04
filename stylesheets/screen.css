@@ -908,11 +908,11 @@ footer .button {
   margin-bottom: 1em;
 }
 /* line 4, ../sass/_blog.scss */
-.article-meta h4 {
+.article-meta .article-title {
   margin: 0;
 }
-/* line 8, ../sass/_blog.scss */
-.article-meta li {
+/* line 10, ../sass/_blog.scss */
+.article-meta .post-categories li {
   list-style: none;
   padding: 0;
   margin: 0;
