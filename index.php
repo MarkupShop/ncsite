@@ -15,7 +15,10 @@ include('breadcrumbs.php');
 
 <section class="main-content article-list">
 
-	<h2 class="page-title"><?php single_cat_title(); ?></h2>
+	<h2 class="page-title">
+		<?php if(is_archive()){
+			single_cat_title(); 
+		}else{ echo "Blog"; } ?></h2>
 
 	<section class="row">
 
