@@ -7,7 +7,7 @@
 		<?php 
 
 		$cat = get_cat_id(single_cat_title());
-		wp_list_categories( 'child_of', $cat );
+		wp_list_categories( 'child_of' => $cat );
 
 		//GET ID OF TOP-LEVEL PAGE
 		$parent = array_reverse(get_post_ancestors($post->ID));
