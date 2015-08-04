@@ -6,6 +6,9 @@
 
 		<?php 
 
+		$cat = get_cat_id();
+		wp_list_categories( 'child_of', $cat );
+
 		//GET ID OF TOP-LEVEL PAGE
 		$parent = array_reverse(get_post_ancestors($post->ID));
 		$first_parent = get_page($parent[0]);
