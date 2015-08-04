@@ -41,8 +41,11 @@
 
 <?php 
 
-if(is_page('home')){ $pageType = 'home'; }
-else{ $pageType = 'page'; }
+if(is_home()){ $pageType = 'blog'; }
+elseif(is_page()){ $pageType = 'page'; }
+elseif(is_archive()){ $pageType = 'archive'; }
+else{ $pageType = 'post'; }
+
 
 ?>
 

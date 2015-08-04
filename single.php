@@ -14,12 +14,19 @@ include('breadcrumbs.php');
 
 
 
-<section class="main-content">
+<section class="main-content post">
 
 <h2 class="page-title"><?php the_title(); ?></h2>
 
 <section class="row">
-		
+
+<?php if(get_field('featured_image') != null){
+	echo '<img class="featured-image" src="'.get_field('featured_image').'" />';
+}
+
+?>
+
+<span class="post-meta">Published on <?php the_date(); ?> by <?php the_author(); ?></span><!--.post-meta-->
 <?php the_content(); ?>
 
 </section>

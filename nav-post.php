@@ -3,12 +3,12 @@
 	<div class="links">
 
 		
-		<dl class="post-meta">
+	<!--	<dl class="post-meta">
 			<dt>Published:</dt>
 			<dd><?php the_date(); ?></dd>
 			<dt>Author:</dt>
 			<dd><?php the_author(); ?></dd>
-		</dl>
+		</dl>-->
 
 	</div>
 

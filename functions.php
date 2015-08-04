@@ -87,4 +87,34 @@ function new_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
+
+/* Custom layout for children of awards */
+function awardTemplateSelect() {
+
+    $idObj = get_category_by_slug('awards'); 
+    $id = $idObj->term_id;
+    if (is_category() && !is_feed()) {
+        if (cat_is_ancestor_of($id, get_query_var('cat'))) {
+            load_template(TEMPLATEPATH . '/category-awards-children.php');
+            exit;
+        }
+    }
+}
+
+add_action('template_redirect', 'awardTemplateSelect');
+
+function resourcesTemplateSelect() {
+
+    $idObj = get_category_by_slug('awards'); 
+    $id = $idObj->term_id;
+    if (is_category() && !is_feed()) {
+        if (cat_is_ancestor_of($id, get_query_var('cat'))) {
+            load_template(TEMPLATEPATH . '/category-resources-children.php');
+            exit;
+        }
+    }
+}
+
+add_action('template_redirect', 'resourcesTemplateSelect');
+
 ?>

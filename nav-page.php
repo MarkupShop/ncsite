@@ -21,10 +21,18 @@
 		<?php else : 
 
 		//GET ID OF TOP-LEVEL PAGE
+
 		$parent = array_reverse(get_post_ancestors($post->ID));
-		$first_parent = get_page($parent[0]);
-		$topID = $first_parent->ID;
-		$topTitle = $first_parent->post_title;
+		
+		if(array_key_exists(0, $parent)){
+			$first_parent = get_page($parent[0]);
+			$topID = $first_parent->ID;
+			$topTitle = $first_parent->post_title;
+		}else{
+			$topTitle = 'NCSITE';
+			$topID = 0;
+		}
+		
 
 		?>
 
