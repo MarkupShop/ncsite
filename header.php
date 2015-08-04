@@ -3,7 +3,7 @@
 
 <head>
 	<title>NCSITE - NC Section : Institute of Transportation Engineers</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/stylesheets/screen.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/stylesheets/screen.css?<?php echo microtime(); ?>" />
 	<?php do_action('wp_head'); ?>
 </head>
 
