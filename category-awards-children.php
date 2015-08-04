@@ -26,6 +26,11 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 <?php if($counter == 0) : ?>
 
+	
+			<article>
+				<?php echo category_description(); ?>
+			</article>
+
 	<article class="expanded">
 
 		

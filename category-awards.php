@@ -34,6 +34,7 @@ foreach ($descendants as $child) {
 	while ($catPosts->have_posts()) : $catPosts->the_post(); 
 
 		if($counter == 0){ ?>
+
 			
 			<article class="expanded">
 				
@@ -48,19 +49,22 @@ foreach ($descendants as $child) {
 
 				<?php the_content(); ?>
 
-			</article>
 
-			<h3>Previous Recipients</h3>
+
+				<?php $catlink = get_category_link($child->term_id); ?>
+				<p><a href="<?php echo $catlink; ?>">Learn more about the <?php echo $child->cat_name; ?></a></p>
+
+			</article>
 		
 		<?php }else{
 
-		echo '<article>';
+		/*echo '<article>';
 
 			echo '<div class="article-info">';
 				echo '<h4 class="article-title"><a href="'.get_the_permalink().'">'.get_the_title().'</a></h4>';
 			echo '</div>';
 
-		echo '</article>';
+		echo '</article>';*/
 
 	}
 
