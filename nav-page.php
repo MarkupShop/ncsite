@@ -4,7 +4,7 @@
 
 		
 
-		<?php if(is_archive() || is_front_page()) : ?>
+		<?php if(is_archive() || is_home()) : ?>
 		<h3><?php single_cat_title(); ?></h3>
 		<?php
 		$cat = get_cat_id(single_cat_title('', false));
