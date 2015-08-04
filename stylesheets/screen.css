@@ -699,32 +699,33 @@ footer .button {
   border-bottom: 1px dashed #aaa;
   padding-bottom: 2em;
   margin-bottom: 2em;
+  background: red;
 }
-/* line 11, ../sass/_page.scss */
+/* line 12, ../sass/_page.scss */
 .page .article-list article:last-child {
   border: none;
   padding-bottom: 0;
 }
-/* line 16, ../sass/_page.scss */
+/* line 17, ../sass/_page.scss */
 .page .article-list article .article-info {
   margin-bottom: 1em;
 }
-/* line 19, ../sass/_page.scss */
+/* line 20, ../sass/_page.scss */
 .page .article-list article .article-info .article-title {
   margin: 0;
 }
-/* line 25, ../sass/_page.scss */
+/* line 26, ../sass/_page.scss */
 .page .article-list article .article-info .post-categories li {
   list-style: none;
   padding: 0;
   margin: 0;
   text-transform: none;
 }
-/* line 41, ../sass/_page.scss */
+/* line 42, ../sass/_page.scss */
 .page .post-meta dt + dd {
   margin-bottom: 1em;
 }
-/* line 47, ../sass/_page.scss */
+/* line 48, ../sass/_page.scss */
 .page .sub-nav {
   background: #396eb6;
   color: #fff;
@@ -732,33 +733,33 @@ footer .button {
   position: absolute;
   right: 10%;
 }
-/* line 54, ../sass/_page.scss */
+/* line 55, ../sass/_page.scss */
 .page .sub-nav .button {
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 1em;
   text-align: center;
 }
-/* line 61, ../sass/_page.scss */
+/* line 62, ../sass/_page.scss */
 .page .sub-nav .links {
   padding: 1em;
 }
-/* line 65, ../sass/_page.scss */
+/* line 66, ../sass/_page.scss */
 .page .sub-nav li {
   list-style: none;
   padding: 0;
   margin: 0 0 .5em;
 }
-/* line 70, ../sass/_page.scss */
+/* line 71, ../sass/_page.scss */
 .page .sub-nav li a {
   color: #fff;
   text-decoration: none;
 }
-/* line 74, ../sass/_page.scss */
+/* line 75, ../sass/_page.scss */
 .page .sub-nav li a:hover {
   text-decoration: underline;
 }
-/* line 80, ../sass/_page.scss */
+/* line 81, ../sass/_page.scss */
 .page .banner {
   width: 100%;
   height: 400px;
@@ -767,17 +768,17 @@ footer .button {
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 88, ../sass/_page.scss */
+/* line 89, ../sass/_page.scss */
 .page .banner .banner-filter {
   width: 100%;
   height: 100%;
   background: url("../assets/slideshow-filter.png") repeat;
 }
-/* line 94, ../sass/_page.scss */
+/* line 95, ../sass/_page.scss */
 .page .promo-image {
   width: 100%;
 }
-/* line 98, ../sass/_page.scss */
+/* line 99, ../sass/_page.scss */
 .page .breadcrumbs {
   background: #e6e7e8;
   padding-top: 2em;
@@ -785,17 +786,17 @@ footer .button {
   padding-bottom: 4em;
   font-family: "Open Sans", sans-serif;
 }
-/* line 105, ../sass/_page.scss */
+/* line 106, ../sass/_page.scss */
 .page .breadcrumbs ul li {
   list-style: none;
   display: inline-block;
   margin: 0 .25em;
 }
-/* line 111, ../sass/_page.scss */
+/* line 112, ../sass/_page.scss */
 .page .breadcrumbs a {
   text-decoration: none;
 }
-/* line 114, ../sass/_page.scss */
+/* line 115, ../sass/_page.scss */
 .page .page-title {
   width: 60%;
   margin-left: -25%;
@@ -804,29 +805,29 @@ footer .button {
   margin-top: -1.5em;
   margin-bottom: 0 !important;
 }
-/* line 123, ../sass/_page.scss */
+/* line 124, ../sass/_page.scss */
 .page .page-section {
   background: #fff;
   padding: 2em 0;
   border-bottom: 4px solid #cc3333;
 }
-/* line 128, ../sass/_page.scss */
+/* line 129, ../sass/_page.scss */
 .page .page-section .wrapper {
   padding-left: 6em;
 }
-/* line 132, ../sass/_page.scss */
+/* line 133, ../sass/_page.scss */
 .page .page-section p, .page .page-section ul {
   width: 60%;
 }
-/* line 136, ../sass/_page.scss */
+/* line 137, ../sass/_page.scss */
 .page .page-section.bg-gray {
   background: #e6e7e8;
 }
-/* line 139, ../sass/_page.scss */
+/* line 140, ../sass/_page.scss */
 .page .page-section.full-width p, .page .page-section.full-width ul {
   width: 90%;
 }
-/* line 146, ../sass/_page.scss */
+/* line 147, ../sass/_page.scss */
 .page .profile {
   *zoom: 1;
   padding-bottom: 2em;
@@ -837,41 +838,41 @@ footer .button {
   display: table;
   clear: both;
 }
-/* line 151, ../sass/_page.scss */
+/* line 152, ../sass/_page.scss */
 .page .profile-card {
   background: #999;
   color: #153f60;
   width: 47%;
   margin-right: 3%;
 }
-/* line 158, ../sass/_page.scss */
+/* line 159, ../sass/_page.scss */
 .page .profile-card img {
   float: left;
   width: 50%;
 }
-/* line 163, ../sass/_page.scss */
+/* line 164, ../sass/_page.scss */
 .page .profile-card dl {
   text-align: center;
   padding-top: 2em;
 }
-/* line 168, ../sass/_page.scss */
+/* line 169, ../sass/_page.scss */
 .page .profile-card .position {
   text-transform: uppercase;
   font-weight: bold;
 }
-/* line 173, ../sass/_page.scss */
+/* line 174, ../sass/_page.scss */
 .page .profile-card .name {
   border-bottom: 1px dashed #153f60;
   display: inline-block;
   padding-bottom: .5em;
   margin-bottom: .5em;
 }
-/* line 182, ../sass/_page.scss */
+/* line 183, ../sass/_page.scss */
 .page .profile-text {
   padding-left: 50%;
   width: 50%;
 }
-/* line 187, ../sass/_page.scss */
+/* line 188, ../sass/_page.scss */
 .page .profile-stack {
   float: left;
   color: #153f60;
@@ -879,21 +880,21 @@ footer .button {
   margin-right: 3%;
   margin-bottom: 3%;
 }
-/* line 194, ../sass/_page.scss */
+/* line 195, ../sass/_page.scss */
 .page .profile-stack img {
   width: 100%;
 }
-/* line 198, ../sass/_page.scss */
+/* line 199, ../sass/_page.scss */
 .page .profile-stack dl {
   text-align: center;
 }
-/* line 202, ../sass/_page.scss */
+/* line 203, ../sass/_page.scss */
 .page .profile-stack .position {
   text-transform: uppercase;
   font-weight: bold;
   margin-top: 1em;
 }
-/* line 208, ../sass/_page.scss */
+/* line 209, ../sass/_page.scss */
 .page .profile-stack .name {
   border-bottom: 1px dashed #153f60;
   display: inline-block;
@@ -901,17 +902,17 @@ footer .button {
   margin-bottom: .5em;
 }
 @media screen and (max-width: 1250px) {
-  /* line 218, ../sass/_page.scss */
+  /* line 219, ../sass/_page.scss */
   .page .sub-nav {
     width: 100%;
     position: static;
   }
-  /* line 222, ../sass/_page.scss */
+  /* line 223, ../sass/_page.scss */
   .page .sub-nav ul li {
     display: inline-block;
     width: 15%;
   }
-  /* line 227, ../sass/_page.scss */
+  /* line 228, ../sass/_page.scss */
   .page .sub-nav .button {
     display: inline-block;
     width: 25%;
