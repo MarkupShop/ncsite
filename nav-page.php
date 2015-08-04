@@ -6,7 +6,7 @@
 
 		<?php 
 
-		$cat = get_cat_id(get_single_cat_title());
+		$cat = get_cat_id(single_cat_title('', false));
 		print_r($cat);
 		wp_list_categories( array('child_of' => $cat ));
 
