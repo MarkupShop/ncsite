@@ -719,11 +719,12 @@ footer .button {
   padding: 0;
   margin: 0;
   text-transform: none;
-  text-size: .8em;
+  font-size: .8em;
 }
 /* line 32, ../sass/_page.scss */
 .page .article-list article .article-info .post-categories li a {
   color: #333;
+  text-decoration: none;
 }
 /* line 40, ../sass/_page.scss */
 .page .post-meta dt + dd {
