@@ -1,11 +1,10 @@
-<section class="breadcrumbs">
+<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
 
 	<div class="wrapper">
+    <?php if(function_exists('bcn_display'))
+    {
+        bcn_display();
+    }?>
 
-
-		<?php the_breadcrumb(); ?>
-
-	</div>
-
-
-</section><!--.breadcrumbs-->
+</div>
+</div>
