@@ -15,7 +15,7 @@ include('breadcrumbs.php');
 
 <section class="main-content article-list">
 
-	<h2 class="page-title">Blog</h2>
+	<h2 class="page-title"><?php single_cat_title(); ?></h2>
 
 	<section class="row">
 
@@ -23,8 +23,8 @@ include('breadcrumbs.php');
 
 	<article>
 
-		<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-		<h4><a href="<?php echo get_category_link(); ?>"><?php the_category(); ?></a></h4>
+		<h3 class="article-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+		<h4 class="cat-name"><?php the_category(); ?></h4>
 
 		<?php the_excerpt(); ?>
 
