@@ -3,6 +3,7 @@
 $dkblue: #10244b;
 $blue: #396eb6;
 $red: #cc3333;
+$gray: #e6e7e8;
 
 /* END VARIABLES */
 
@@ -55,13 +56,14 @@ button, .button{
 	@include pie-clearfix;
 }
 
-.wpb_row{
+.row{
 	padding: 2em 30% 2em 10%;
-	margin: 0!important;
-}
+	background: #fff;
+	border-bottom: 4px solid $red;
 
-.wpb_column{
-	padding: 0 2% 0 0!important;
+	&:nth-child(2n-1){
+		background: $gray;
+	}
 }
 
 @media screen and (max-width: 1415px){

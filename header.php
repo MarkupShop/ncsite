@@ -30,17 +30,7 @@
 		
 			<nav class="primary-nav">
 				<ul>
-					<li><a href="<?php echo bloginfo('url'); ?>/about">About</a>
-						<ul class="dropdown">
-							<li><a href="<?php echo bloginfo('url'); ?>/about/ncsite-overview">NCSite Overview</a></li>
-							<li>Item 2</li>
-							<li>Item 3</li>
-						</ul>
-					</li>
-					<li>Membership</li>
-					<li>Events</li>
-					<li>Resources</li>
-					<li>Blog</li>
+					<? wp_nav_menu(); ?>
 					<?php get_search_form(); ?>
 				</ul>
 			</nav><!--.primary-nav-->
@@ -51,8 +41,8 @@
 
 <?php 
 
-if(is_home()){ $pageType = 'home'; }
-elseif(is_page()){ $pageType = 'page'; }
+if(is_page('home')){ $pageType = 'home'; }
+else{ $pageType = 'page'; }
 
 ?>
 

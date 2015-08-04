@@ -47,14 +47,16 @@
 }
 
 .primary-nav{
+	float: right; 
 
 	> ul > li{
 			padding-bottom: 1em;
 	
 	}
-	ul{
-		float: right;
 
+	.menu-main-menu-container{ display: inline-block; }
+
+	ul{
 
 
 		li{

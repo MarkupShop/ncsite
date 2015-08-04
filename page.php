@@ -2,43 +2,33 @@
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <section class="banner" style="background-image: url('/ncsite/wp-content/themes/ncsite/assets/page-bg.png');">
-
 	<div class="banner-filter"></div>
 </section><!--.banner-->
 
 <!--<img class="promo-image" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/page-bg.jpg" />-->
 
-<nav class="sub-nav">
-
-	<h3>ABOUT NCSite</h3>
-
-	<ul>
-		<li>Organization</li>
-		<li>4 Councils</li>
-		<li>Awards</li>
-		<li>Sponsors</li>
-	</ul>
-
-	<a href="#" class="button">Join NCSite</a>
-	<a href="#" class="button">Login</a>
-
-</nav><!--.sub-nav-->
-
-<section class="breadcrumbs">
-
-	<div class="wrapper">
+<?php 
+include('nav-page.php');
+include('breadcrumbs.php');
+?>
 
 
-		<?php the_breadcrumb(); ?>
 
-	</div>
+<section class="main-content">
 
-
-</section><!--.breadcrumbs-->
-
+<h2 class="page-title"><?php the_title(); ?></h2>
 		
-	<?php the_content(); ?>
+<?php 
 
+$content = get_field('content_rows'); 
+
+foreach( $content as $row ){
+	echo '<div class="row">'.$row['row'].'</div>';
+}
+
+?>
+
+</section>
 
 <?php endwhile; else : ?>
 	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
