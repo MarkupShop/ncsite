@@ -15,7 +15,7 @@ include('breadcrumbs.php');
 
 <section class="main-content article-list">
 
-	<h2 class="page-title"><?php echo get_page_title(); ?></h2>
+	<h2 class="page-title"><?php echo get_the_title(); ?></h2>
 
 	<section class="row">
 
