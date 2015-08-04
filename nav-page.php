@@ -11,7 +11,7 @@
 		wp_list_categories( array('child_of' => $cat, 'title_li' => '' ));
 		?>
 		
-		<?php else : ?>
+		<?php else : 
 
 		//GET ID OF TOP-LEVEL PAGE
 		$parent = array_reverse(get_post_ancestors($post->ID));
