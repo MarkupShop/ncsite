@@ -2,9 +2,16 @@
 
 	<div class="links">
 
+		<?php if(is_home()) : ?>
+
+		<h3>Blog</h3>
+		<?php
+		wp_list_categories( array('depth' => 1));
+
+		?>
 		
 
-		<?php if(is_archive() || is_home()) : ?>
+		<?php elseif(is_archive())  : ?>
 		<h3><?php single_cat_title(); ?></h3>
 		<?php
 		$cat = get_cat_id(single_cat_title('', false));
