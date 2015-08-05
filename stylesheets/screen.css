@@ -915,6 +915,54 @@ footer .button {
 .page {
   background: #e6e7e8;
 }
+/* line 4, ../sass/_page.scss */
+.page .row {
+  *zoom: 1;
+}
+/* line 38, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.page .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 7, ../sass/_page.scss */
+.page .row .column {
+  float: left;
+}
+/* line 12, ../sass/_page.scss */
+.page .columns2 .column {
+  width: 48%;
+  margin-right: 2%;
+}
+/* line 17, ../sass/_page.scss */
+.page .columns3 .column {
+  width: 31%;
+  margin-right: 2%;
+}
+/* line 22, ../sass/_page.scss */
+.page .columns4 .column {
+  width: 23%;
+  margin-right: 2%;
+}
+@media screen and (max-width: 1400px) {
+  /* line 29, ../sass/_page.scss */
+  .page .columns4 .column {
+    width: 48%;
+    margin-right: 2%;
+  }
+  /* line 33, ../sass/_page.scss */
+  .page .columns4 .column:nth-child(2n-1) {
+    clear: left;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 44, ../sass/_page.scss */
+  .page .columns2 .column, .page .columns3 .column, .page .columns4 .column {
+    width: 100%;
+    margin-right: 0;
+    float: none;
+  }
+}
 
 /* line 4, ../sass/_post.scss */
 .post .featured-image {

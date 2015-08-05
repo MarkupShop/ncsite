@@ -1,4 +1,54 @@
 .page{
 	background: #e6e7e8;
 
+	.row{
+		@include pie-clearfix;
+		
+		.column{
+			float: left;
+		}
+	}
+
+	.columns2 .column{
+		width: 48%;
+		margin-right: 2%;
+	}
+
+	.columns3 .column{
+		width: 31%;
+		margin-right: 2%;
+	}
+
+	.columns4 .column{
+		width: 23%;
+		margin-right: 2%;
+	}
+
+	@media screen and (max-width: 1400px){
+
+		.columns4 .column{
+			width: 48%;
+			margin-right: 2%;
+
+			&:nth-child(2n-1){
+				clear: left;
+			}
+		}
+
+	}
+
+	@media screen and (max-width: 800px){
+
+		.columns2, .columns3, .columns4{
+
+			.column{
+				width: 100%;
+				margin-right: 0;
+				float: none;
+			}
+
+		}
+
+	}
+
 }

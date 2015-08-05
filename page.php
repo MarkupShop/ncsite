@@ -20,10 +20,23 @@ include('breadcrumbs.php');
 		
 <?php 
 
-$content = get_field('content_rows'); 
+$rows = get_field('content_rows'); 
 
-foreach( $content as $row ){
-	echo '<div class="row">'.$row['row'].'</div>';
+foreach( $rows as $row ){
+
+	//print_r($content);
+
+	foreach( $row as $columns ){
+
+
+		echo '<div class="row columns'.sizeof($columns).'">';
+		
+		foreach( $columns as $column ){
+			echo '<div class="column">'.$column['column'].'</div>';
+		}
+	}
+
+	echo '</div>';
 }
 
 ?>
