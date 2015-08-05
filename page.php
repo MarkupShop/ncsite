@@ -27,28 +27,34 @@ include('breadcrumbs.php');
 		
 <?php 
 
-$rows = get_field('content_rows'); 
+$sections = get_field('content_rows'); 
 
-foreach( $rows as $row ){
+foreach( $sections as $section ){
 
-	//print_r($content);
+	foreach( $section as $row){
 
-	foreach( $row as $columns ){
-
-
-		echo '<div class="row columns'.sizeof($columns).'">';
+		echo '<div class="row">';
 		
-		foreach( $columns as $column ){
-			echo '<div class="column">'.$column['column'].'</div>';
-		}
-	}
+		foreach( $row as $columns ){
 
-	echo '</div>';
+
+			echo '<div class="columns '.$columns['layout'].'">';
+			
+				echo '<div class="column first-column">'.$columns['first_column'].'</div>';
+
+				if( $columns['second_column'] != null ){ echo '<div class="column second-column">'.$columns['second_column'].'</div>'; }
+				if( $columns['third_column'] != null ){ echo '<div class="column">'.$columns['third_column'].'</div>'; }
+				if( $columns['fourth_column'] != null ){ echo '<div class="column">'.$columns['fourth_column'].'</div>'; }
+
+			echo '</div>';
+		}
+
+		echo '</div>';
+
+	}
 }
 
 ?>
-
-</section>
 
 <?php endwhile; else : ?>
 	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
