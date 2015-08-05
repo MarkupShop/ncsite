@@ -930,37 +930,46 @@ footer .button {
   clear: both;
 }
 /* line 11, ../sass/_page.scss */
-.page .row .columns.half .column, .page .row .columns.quarters .column, .page .row .columns.three-quarter .column {
+.page .row .columns.half .first-column, .page .row .columns.one-quarter .first-column, .page .row .columns.three-quarter .first-column {
   float: left;
 }
-/* line 17, ../sass/_page.scss */
+/* line 19, ../sass/_page.scss */
+.page .row .columns.quarters .column {
+  float: left;
+}
+/* line 23, ../sass/_page.scss */
 .page .row .columns.half .first-column {
   width: 48%;
   margin-right: 2%;
 }
-/* line 18, ../sass/_page.scss */
-.page .row .columns.quarters .column {
+/* line 24, ../sass/_page.scss */
+.page .row .columns.one-quarter .first-column {
   width: 23%;
   margin-right: 2%;
 }
-/* line 19, ../sass/_page.scss */
+/* line 25, ../sass/_page.scss */
 .page .row .columns.three-quarter .first-column {
   width: 73%;
   margin-right: 2%;
 }
+/* line 26, ../sass/_page.scss */
+.page .row .columns.quarters .column {
+  width: 23%;
+  margin-right: 2%;
+}
 @media screen and (max-width: 1400px) {
-  /* line 28, ../sass/_page.scss */
+  /* line 35, ../sass/_page.scss */
   .page .columns4 .column {
     width: 48%;
     margin-right: 2%;
   }
-  /* line 32, ../sass/_page.scss */
+  /* line 39, ../sass/_page.scss */
   .page .columns4 .column:nth-child(2n-1) {
     clear: left;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 43, ../sass/_page.scss */
+  /* line 50, ../sass/_page.scss */
   .page .columns2 .column, .page .columns3 .column, .page .columns4 .column {
     width: 100%;
     margin-right: 0;

@@ -6,17 +6,24 @@
 		
 		.columns{
 
-			&.half, &.quarters, &.three-quarter{
+			&.half, &.one-quarter, &.three-quarter{
 
-				.column{
+				.first-column{
 					float: left;
 				}
 
 			}
 
+			&.quarters{
+
+				.column{ float: left; }
+
+			}
+
 			&.half .first-column{ width: 48%; margin-right: 2%; }
-			&.quarters .column{ width: 23%; margin-right: 2%; }
+			&.one-quarter .first-column{ width: 23%; margin-right: 2%; }
 			&.three-quarter .first-column{ width: 73%; margin-right: 2%; }
+			&.quarters .column{ width: 23%; margin-right: 2%; }
 			
 		}
 	}
