@@ -117,4 +117,20 @@ function resourcesTemplateSelect() {
 
 add_action('template_redirect', 'resourcesTemplateSelect');
 
+/* Adding custom posts to wp query object */
+function my_always_get_post_custom( $posts ) {
+
+    for ( $i = 0; $i < count($posts); $i++ ) {
+
+        $custom_fields = get_post_custom( $posts[$i]->ID );
+        $posts[$i]->custom_fields = $custom_fields;
+
+    }
+
+    return $posts;
+
+}
+
+add_filter( 'the_posts', 'my_always_get_post_custom' );
+
 ?>

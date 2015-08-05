@@ -166,46 +166,50 @@ button:hover, .button:hover {
   right: 10%;
 }
 /* line 90, ../sass/_global.scss */
+.sub-nav a {
+  color: #fff;
+}
+/* line 92, ../sass/_global.scss */
 .sub-nav .button {
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 1em;
   text-align: center;
 }
-/* line 97, ../sass/_global.scss */
+/* line 99, ../sass/_global.scss */
 .sub-nav .links {
   padding: 1em;
 }
-/* line 101, ../sass/_global.scss */
+/* line 103, ../sass/_global.scss */
 .sub-nav .current_page_item {
   font-weight: 800;
 }
-/* line 105, ../sass/_global.scss */
+/* line 107, ../sass/_global.scss */
 .sub-nav .children {
   margin-left: 1em;
   font-size: .8em;
 }
-/* line 109, ../sass/_global.scss */
+/* line 111, ../sass/_global.scss */
 .sub-nav .children li {
   margin: .5em 0;
 }
-/* line 114, ../sass/_global.scss */
+/* line 116, ../sass/_global.scss */
 .sub-nav li {
   list-style: none;
   padding: 0;
   margin: 0 0 .5em;
 }
-/* line 119, ../sass/_global.scss */
+/* line 121, ../sass/_global.scss */
 .sub-nav li a {
   color: #fff;
   text-decoration: none;
 }
-/* line 123, ../sass/_global.scss */
+/* line 125, ../sass/_global.scss */
 .sub-nav li a:hover {
   text-decoration: underline;
 }
 
-/* line 131, ../sass/_global.scss */
+/* line 133, ../sass/_global.scss */
 .banner {
   width: 100%;
   height: 200px;
@@ -214,19 +218,19 @@ button:hover, .button:hover {
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 139, ../sass/_global.scss */
+/* line 141, ../sass/_global.scss */
 .banner .banner-filter {
   width: 100%;
   height: 100%;
   background: url("../assets/slideshow-filter.png") repeat;
 }
 
-/* line 145, ../sass/_global.scss */
+/* line 147, ../sass/_global.scss */
 .promo-image {
   width: 100%;
 }
 
-/* line 149, ../sass/_global.scss */
+/* line 151, ../sass/_global.scss */
 .breadcrumbs {
   background: #e6e7e8;
   padding-top: 2em;
@@ -234,18 +238,18 @@ button:hover, .button:hover {
   padding-bottom: 6em;
   font-family: "Open Sans", sans-serif;
 }
-/* line 156, ../sass/_global.scss */
+/* line 158, ../sass/_global.scss */
 .breadcrumbs ul li {
   list-style: none;
   display: inline-block;
   margin: 0 .25em;
 }
-/* line 162, ../sass/_global.scss */
+/* line 164, ../sass/_global.scss */
 .breadcrumbs a {
   text-decoration: none;
 }
 
-/* line 165, ../sass/_global.scss */
+/* line 167, ../sass/_global.scss */
 .page-title {
   width: 60%;
   margin-left: -25%;
@@ -255,30 +259,30 @@ button:hover, .button:hover {
   margin-bottom: 0 !important;
 }
 
-/* line 174, ../sass/_global.scss */
+/* line 176, ../sass/_global.scss */
 .page-section {
   background: #fff;
   padding: 2em 0;
   border-bottom: 4px solid #cc3333;
 }
-/* line 179, ../sass/_global.scss */
+/* line 181, ../sass/_global.scss */
 .page-section .wrapper {
   padding-left: 6em;
 }
-/* line 183, ../sass/_global.scss */
+/* line 185, ../sass/_global.scss */
 .page-section p, .page-section ul {
   width: 60%;
 }
-/* line 187, ../sass/_global.scss */
+/* line 189, ../sass/_global.scss */
 .page-section.bg-gray {
   background: #e6e7e8;
 }
-/* line 190, ../sass/_global.scss */
+/* line 192, ../sass/_global.scss */
 .page-section.full-width p, .page-section.full-width ul {
   width: 90%;
 }
 
-/* line 197, ../sass/_global.scss */
+/* line 199, ../sass/_global.scss */
 .profile {
   *zoom: 1;
   padding-bottom: 2em;
@@ -290,29 +294,29 @@ button:hover, .button:hover {
   clear: both;
 }
 
-/* line 202, ../sass/_global.scss */
+/* line 204, ../sass/_global.scss */
 .profile-card {
   background: #999;
   color: #153f60;
   width: 47%;
   margin-right: 3%;
 }
-/* line 209, ../sass/_global.scss */
+/* line 211, ../sass/_global.scss */
 .profile-card img {
   float: left;
   width: 50%;
 }
-/* line 214, ../sass/_global.scss */
+/* line 216, ../sass/_global.scss */
 .profile-card dl {
   text-align: center;
   padding-top: 2em;
 }
-/* line 219, ../sass/_global.scss */
+/* line 221, ../sass/_global.scss */
 .profile-card .position {
   text-transform: uppercase;
   font-weight: bold;
 }
-/* line 224, ../sass/_global.scss */
+/* line 226, ../sass/_global.scss */
 .profile-card .name {
   border-bottom: 1px dashed #153f60;
   display: inline-block;
@@ -320,13 +324,13 @@ button:hover, .button:hover {
   margin-bottom: .5em;
 }
 
-/* line 233, ../sass/_global.scss */
+/* line 235, ../sass/_global.scss */
 .profile-text {
   padding-left: 50%;
   width: 50%;
 }
 
-/* line 238, ../sass/_global.scss */
+/* line 240, ../sass/_global.scss */
 .profile-stack {
   float: left;
   color: #153f60;
@@ -334,21 +338,21 @@ button:hover, .button:hover {
   margin-right: 3%;
   margin-bottom: 3%;
 }
-/* line 245, ../sass/_global.scss */
+/* line 247, ../sass/_global.scss */
 .profile-stack img {
   width: 100%;
 }
-/* line 249, ../sass/_global.scss */
+/* line 251, ../sass/_global.scss */
 .profile-stack dl {
   text-align: center;
 }
-/* line 253, ../sass/_global.scss */
+/* line 255, ../sass/_global.scss */
 .profile-stack .position {
   text-transform: uppercase;
   font-weight: bold;
   margin-top: 1em;
 }
-/* line 259, ../sass/_global.scss */
+/* line 261, ../sass/_global.scss */
 .profile-stack .name {
   border-bottom: 1px dashed #153f60;
   display: inline-block;
@@ -357,17 +361,17 @@ button:hover, .button:hover {
 }
 
 @media screen and (max-width: 1250px) {
-  /* line 269, ../sass/_global.scss */
+  /* line 271, ../sass/_global.scss */
   .sub-nav {
     width: 100%;
     position: static;
   }
-  /* line 273, ../sass/_global.scss */
+  /* line 275, ../sass/_global.scss */
   .sub-nav ul li {
     display: inline-block;
     width: 15%;
   }
-  /* line 278, ../sass/_global.scss */
+  /* line 280, ../sass/_global.scss */
   .sub-nav .button {
     display: inline-block;
     width: 25%;
@@ -976,10 +980,6 @@ footer .button {
   margin-bottom: 1em;
   font-size: .8em;
   font-style: italic;
-}
-/* line 18, ../sass/_post.scss */
-.post p {
-  max-width: 800px;
 }
 
 /* line 3, ../sass/_archive.scss */

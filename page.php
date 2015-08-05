@@ -1,7 +1,14 @@
 <?php get_header(); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<section class="banner" style="background-image: url('/ncsite/wp-content/themes/ncsite/assets/page-bg.png');">
+<?php 
+	if( get_field('custom_header_image') != null ){ 
+		$backgroundURL = get_field('custom_header_image'); 
+	}else{
+		$backgroundURL = '/ncsite/wp-content/themes/ncsite/assets/page-bg.png';
+	}
+?>
+<section class="banner" style="background-image: url( <?php echo $backgroundURL; ?> );">
 	<div class="banner-filter"></div>
 </section><!--.banner-->
 
