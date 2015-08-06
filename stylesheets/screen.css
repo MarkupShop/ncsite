@@ -899,10 +899,10 @@ footer .column li {
 /* line 183, ../sass/_home.scss */
 .home .sponsors .logos li {
   float: left;
-  width: 22%;
+  width: 14%;
   list-style: none;
   padding: 0;
-  margin: 2em 1.5%;
+  margin: 2em 5.5%;
 }
 /* line 190, ../sass/_home.scss */
 .home .sponsors .logos li img {
