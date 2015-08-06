@@ -93,28 +93,35 @@
 
 </section><!--.content-->
 
-<section class="sponsors">
 
-	<div class="wrapper">
+			<?php
 
-		<h2 class="content-title">Our Sponsors</h2>
-	
-		<ul class="logos">
-			<li><img src="<?php echo bloginfo('template_directory'); ?>/assets/atkins-logo.png" alt="Atkins" /></li>
-			<li><img src="<?php echo bloginfo('template_directory'); ?>/assets/atkins-logo.png" alt="Atkins" /></li>
-			<li><img src="<?php echo bloginfo('template_directory'); ?>/assets/atkins-logo.png" alt="Atkins" /></li>
-			<li><img src="<?php echo bloginfo('template_directory'); ?>/assets/atkins-logo.png" alt="Atkins" /></li>
-			<li><img src="<?php echo bloginfo('template_directory'); ?>/assets/atkins-logo.png" alt="Atkins" /></li>
-			<li><img src="<?php echo bloginfo('template_directory'); ?>/assets/atkins-logo.png" alt="Atkins" /></li>
-			<li><img src="<?php echo bloginfo('template_directory'); ?>/assets/atkins-logo.png" alt="Atkins" /></li>
-			<li><img src="<?php echo bloginfo('template_directory'); ?>/assets/atkins-logo.png" alt="Atkins" /></li>
-		</ul>
-	
-		<a class="button">Sponsor NCSITE</a>
+			// The Query
+			$sponsors = new WP_Query( array('post_type' => 'sponsors') );
 
-	</div><!--.wrapper-->
+			// The Loop
+			if ( $sponsors->have_posts() ) {
+				echo '<section class="sponsors">';
+				echo '<div class="wrapper">';
+				echo '<h2 class="content-title">Our Sponsors</h2>';
+				echo '<ul class="logos">';
 
-</section><!--.sponsors-->
+				while ( $sponsors->have_posts() ) {
+					$sponsors->the_post();
+					echo '<li><img src=' . get_field('sponsor_logo') . ' alt="' . get_field('sponsor_name') . '" /></li>';
+				}
+				echo '</ul>';
+				echo '<a class="button">Sponsor NCSITE</a>';
+				echo '</div><!--.wrapper-->';
+				echo '</section><!--.sponsors-->';
+			} else {
+					// no posts found
+			}
+			/* Restore original Post Data */
+			wp_reset_postdata();
+
+			?>
+		
 
 <section class="president">
 
