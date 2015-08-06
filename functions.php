@@ -48,11 +48,30 @@ function create_posttype_events() {
 // Hooking up our function to theme setup
 add_action( 'init', 'create_posttype_events' );
 
+function create_posttype_home_slider() {
+
+    register_post_type( 'slides',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Home Page Slides' ),
+                'singular_name' => __( 'Slide' )
+            ),
+            'public' => true,
+            'has_archive' => false,
+            'rewrite' => array('slug' => 'slides'),
+        )
+    );
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'create_posttype_home_slider' );
+
 
 function remove_content_editor() {
     remove_post_type_support( 'page' , 'editor' );
     remove_post_type_support( 'sponsors' , 'editor' );
     remove_post_type_support( 'jobs', 'editor' );
+    remove_post_type_support( 'slides', 'editor' );
     
 }
 
@@ -87,7 +106,7 @@ add_action('template_redirect', 'awardTemplateSelect');
 
 function resourcesTemplateSelect() {
 
-    $idObj = get_category_by_slug('awards'); 
+    $idObj = get_category_by_slug('resources'); 
     $id = $idObj->term_id;
     if (is_category() && !is_feed()) {
         if (cat_is_ancestor_of($id, get_query_var('cat'))) {

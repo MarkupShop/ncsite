@@ -1,22 +1,44 @@
 <?php get_header(); ?>
 
-<section class="slideshow">
-	<div class="slideshow-texture">
-		<div class="wrapper">
-			<div class="slideshow-content">
-				<ul class="slideshow-progress">
-					<li class="active">1</li>
-					<li>2</li>
-					<li>3</li>
-					<li>4</li>
-					<li>5</li>
-				</ul>
-				<h2 class="slideshow-title">Roundabout:Hillborough Street:Raleigh, NC:2013</h2>
-				<p class="slideshow-excerpt">This is info about the project. It was super awesome and yadda yadda yadda. <a href="#">More&raquo;</a></p>
-			</div><!--.slideshow-content-->
-		</div><!--.wrapper-->
-	</div><!--.slide-->
-</section><!--.slideshow-->
+<?php
+
+/* SLIDESHOW CUSTOM QUERY */
+
+// The Query
+$sponsors = new WP_Query( array('post_type' => 'slides') );
+
+// The Loop
+if ( $sponsors->have_posts() ) {
+	echo '<section class="slideshow">';
+	echo '<div class="slideshow-texture">';
+	echo '<div class="wrapper">';
+
+	while ( $sponsors->have_posts() ) {
+		$sponsors->the_post();
+
+		echo '<div class="slideshow-content">';
+		echo '<h2 class="slideshow-title">'.get_the_title().'</h2>';
+		echo '<p class="slideshow-excerpt">'.get_field('slide_text').'</p>';
+
+		if( get_field('type_of_content') == 'internal' ){
+			$link = get_field('internal_content_link');
+		}else{
+			$link = get_field('external_content_link');
+		}
+		echo '<a href="'.$link.'">Read More</a>';
+		echo '</div>';
+	}
+	echo '</div><!--.wrapper-->';
+	echo '</div><!--.slideshow-texture-->';
+	echo '</section><!--.slideshow-->';
+} else {
+		// no posts found
+}
+/* Restore original Post Data */
+wp_reset_postdata();
+
+?>
+
 
 <section class="content">
 
@@ -94,33 +116,35 @@
 </section><!--.content-->
 
 
-			<?php
+<?php
 
-			// The Query
-			$sponsors = new WP_Query( array('post_type' => 'sponsors') );
+/* SPONSORS LOGOS CUSTOM QUERY */
 
-			// The Loop
-			if ( $sponsors->have_posts() ) {
-				echo '<section class="sponsors">';
-				echo '<div class="wrapper">';
-				echo '<h2 class="content-title">Our Sponsors</h2>';
-				echo '<ul class="logos">';
+// The Query
+$sponsors = new WP_Query( array('post_type' => 'sponsors') );
 
-				while ( $sponsors->have_posts() ) {
-					$sponsors->the_post();
-					echo '<li><img src=' . get_field('sponsor_logo') . ' alt="' . get_field('sponsor_name') . '" /></li>';
-				}
-				echo '</ul>';
-				echo '<a class="button">Sponsor NCSITE</a>';
-				echo '</div><!--.wrapper-->';
-				echo '</section><!--.sponsors-->';
-			} else {
-					// no posts found
-			}
-			/* Restore original Post Data */
-			wp_reset_postdata();
+// The Loop
+if ( $sponsors->have_posts() ) {
+	echo '<section class="sponsors">';
+	echo '<div class="wrapper">';
+	echo '<h2 class="content-title">Our Sponsors</h2>';
+	echo '<ul class="logos">';
 
-			?>
+	while ( $sponsors->have_posts() ) {
+		$sponsors->the_post();
+		echo '<li><img src=' . get_field('sponsor_logo') . ' alt="' . get_field('sponsor_name') . '" /></li>';
+	}
+	echo '</ul>';
+	echo '<a class="button">Sponsor NCSITE</a>';
+	echo '</div><!--.wrapper-->';
+	echo '</section><!--.sponsors-->';
+} else {
+		// no posts found
+}
+/* Restore original Post Data */
+wp_reset_postdata();
+
+?>
 		
 
 <section class="president">

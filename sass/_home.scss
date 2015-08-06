@@ -47,6 +47,23 @@
 				}
 			}
 		}
+
+		a{
+			padding: 1em;
+			background: $gray;
+			color: $red;
+			display: inline-block;
+			margin-top: 1em;
+			text-decoration: none;
+			font-family: 'Raleway';
+			float: right;
+			@include transition(all .5s);
+
+			&:hover{
+				color: $dkblue;
+				background: darken( $gray, 10% );
+			}
+		}
 	}
 	
 	.content{
