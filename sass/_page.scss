@@ -6,19 +6,16 @@
 		
 		.columns{
 
-			&.half, &.one-quarter, &.three-quarter{
+			.column{
+				float: left;
 
-				.first-column{
-					float: left;
+				.wp-caption, img{
+					width: 100%!important;
+					height: auto;
 				}
-
 			}
 
-			&.quarters{
-
-				.column{ float: left; }
-
-			}
+			&.full-width .column{ float: none; }
 
 			&.half .first-column{ width: 48%; margin-right: 2%; }
 			&.one-quarter .first-column{ width: 23%; margin-right: 2%; }
@@ -32,12 +29,15 @@
 
 	@media screen and (max-width: 1400px){
 
-		.columns4 .column{
-			width: 48%;
-			margin-right: 2%;
+		.row{
 
-			&:nth-child(2n-1){
-				clear: left;
+			.columns{
+
+				&.quarters .column{ width: 48%; }
+
+				&.quarters .column:nth-child(2n+1){
+					clear: left;
+				}
 			}
 		}
 
@@ -45,13 +45,15 @@
 
 	@media screen and (max-width: 800px){
 
-		.columns2, .columns3, .columns4{
+		.row{
 
-			.column{
-				width: 100%;
-				margin-right: 0;
-				float: none;
+			.columns{
+
+				&.quarters .column{ width: 100%; float: none; }
+
 			}
+
+			
 
 		}
 

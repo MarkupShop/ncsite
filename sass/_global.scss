@@ -283,3 +283,19 @@ button, .button{
 	}
 }
 
+.profile_card{
+	max-width: 200px; 
+
+	img{
+		width: 100%;
+		margin-bottom: 1em;
+	}
+
+	dl{
+		text-align: center;
+
+		.title{ font-weight: bold; text-transform: uppercase; }
+		.name{ border-bottom: 1px dashed; padding-bottom: 1em; margin-bottom: 1em; }
+	}
+}
+
