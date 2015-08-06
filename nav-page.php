@@ -94,7 +94,7 @@ $the_query = new WP_Query( $query_args ); ?>
 		<li>Sponsors</li>
 	</ul>-->
 
-	<a href="#" class="button">Join NCSite</a>
+	<a href="<?php bloginfo('url');?>/membership" class="button">Join NCSite</a>
 	<a href="#" class="button">Login</a>
 
 </nav><!--.sub-nav-->
