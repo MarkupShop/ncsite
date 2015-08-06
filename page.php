@@ -27,7 +27,7 @@ include('breadcrumbs.php');
 		
 <?php 
 
-$sections = get_field('content_rows'); 
+$sections = get_field('content_sections'); 
 
 foreach( $sections as $section ){
 
