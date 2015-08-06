@@ -905,10 +905,14 @@ footer .column li {
   margin: 2em 5.5%;
 }
 /* line 190, ../sass/_home.scss */
+.home .sponsors .logos li:nth-child(4n+1) {
+  clear: left;
+}
+/* line 194, ../sass/_home.scss */
 .home .sponsors .logos li img {
   width: 100%;
 }
-/* line 196, ../sass/_home.scss */
+/* line 200, ../sass/_home.scss */
 .home .president {
   padding: 3em 0;
   background: #f1f1f1;
@@ -916,23 +920,23 @@ footer .column li {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 202, ../sass/_home.scss */
+/* line 206, ../sass/_home.scss */
 .home .president .president-content {
   float: right;
   width: 85%;
 }
-/* line 207, ../sass/_home.scss */
+/* line 211, ../sass/_home.scss */
 .home .president img {
   float: left;
   width: 12%;
   margin-right: 3%;
 }
 @media screen and (max-width: 860px) {
-  /* line 217, ../sass/_home.scss */
+  /* line 221, ../sass/_home.scss */
   .home .slideshow {
     background: #fff;
   }
-  /* line 220, ../sass/_home.scss */
+  /* line 224, ../sass/_home.scss */
   .home .slideshow .slideshow-content {
     float: none;
     position: static;
@@ -942,37 +946,37 @@ footer .column li {
     box-sizing: border-box;
     background: #cc3333;
   }
-  /* line 230, ../sass/_home.scss */
+  /* line 234, ../sass/_home.scss */
   .home .slideshow .slideshow-progress {
     display: none;
   }
-  /* line 235, ../sass/_home.scss */
+  /* line 239, ../sass/_home.scss */
   .home .sidebar-content, .home .main-content {
     float: none;
     width: 100%;
   }
-  /* line 240, ../sass/_home.scss */
+  /* line 244, ../sass/_home.scss */
   .home .cutout-overlay {
     margin: 0 0 2em;
     width: 100%;
     height: auto;
     text-align: right;
   }
-  /* line 246, ../sass/_home.scss */
+  /* line 250, ../sass/_home.scss */
   .home .cutout-overlay .button {
     float: none;
   }
-  /* line 250, ../sass/_home.scss */
+  /* line 254, ../sass/_home.scss */
   .home .president img {
     width: 22%;
   }
-  /* line 254, ../sass/_home.scss */
+  /* line 258, ../sass/_home.scss */
   .home .president .president-content {
     width: 75%;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 265, ../sass/_home.scss */
+  /* line 269, ../sass/_home.scss */
   .home .sponsors .button {
     position: static;
     margin-top: 1em;
@@ -980,19 +984,19 @@ footer .column li {
   }
 }
 @media screen and (max-width: 400px) {
-  /* line 276, ../sass/_home.scss */
+  /* line 280, ../sass/_home.scss */
   .home .president img {
     width: 80%;
     margin: 0 auto 1em;
     float: none;
     display: block;
   }
-  /* line 283, ../sass/_home.scss */
+  /* line 287, ../sass/_home.scss */
   .home .president .president-content {
     width: 100%;
     text-align: center;
   }
-  /* line 290, ../sass/_home.scss */
+  /* line 294, ../sass/_home.scss */
   .home .content-title {
     text-align: center;
     font-size: 1.75em;
