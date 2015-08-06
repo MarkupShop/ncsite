@@ -48,24 +48,6 @@ function create_posttype_events() {
 // Hooking up our function to theme setup
 add_action( 'init', 'create_posttype_events' );
 
-function create_posttype_jobs() {
-
-    register_post_type( 'jobs',
-    // CPT Options
-        array(
-            'labels' => array(
-                'name' => __( 'Job Postings' ),
-                'singular_name' => __( 'Job Posting' )
-            ),
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => array('slug' => 'jobs'),
-        )
-    );
-}
-// Hooking up our function to theme setup
-add_action( 'init', 'create_posttype_jobs' );
-
 
 function remove_content_editor() {
     remove_post_type_support( 'page' , 'editor' );
