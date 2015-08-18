@@ -46,7 +46,7 @@ function create_posttype_events() {
     );
 }
 // Hooking up our function to theme setup
-add_action( 'init', 'create_posttype_events' );
+//add_action( 'init', 'create_posttype_events' );
 
 function create_posttype_home_slider() {
 
