@@ -22,6 +22,7 @@ $( document ).ready(function(){
 	
 
 	$('.slideshow .next-arrow').click(function(){
+		console.log('clicked');
 		changeSliderNext();
 		return false;
 	});
