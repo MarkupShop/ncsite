@@ -26,9 +26,6 @@ include('breadcrumbs.php');
 
 ?>
 
-<span class="post-meta">Published on <?php the_date(); ?> by <?php the_author(); ?></span><!--.post-meta-->
-<?php the_content(); ?>
-
 </section>
 
 <?php endwhile; else : ?>
