@@ -19,7 +19,7 @@ $( document ).ready(function(){
 
 	
 
-	$('.slideshow .next-arrow').click(function(){
+	$('.slideshow .arrow-right').click(function(){
 		event.preventDefault();
 		console.log('clicked');
 		changeSliderNext();
