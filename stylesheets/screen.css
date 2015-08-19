@@ -1020,6 +1020,7 @@ footer .column li {
 /* line 4, ../sass/_page.scss */
 .page .row {
   *zoom: 1;
+  clear: both;
 }
 /* line 38, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .page .row:after {
@@ -1027,51 +1028,62 @@ footer .column li {
   display: table;
   clear: both;
 }
-/* line 9, ../sass/_page.scss */
+/* line 8, ../sass/_page.scss */
+.page .row .columns {
+  clear: both;
+  *zoom: 1;
+}
+/* line 38, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.page .row .columns:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 12, ../sass/_page.scss */
 .page .row .columns .column {
   float: left;
 }
-/* line 12, ../sass/_page.scss */
+/* line 15, ../sass/_page.scss */
 .page .row .columns .column .wp-caption, .page .row .columns .column img {
   width: 100% !important;
   height: auto;
 }
-/* line 18, ../sass/_page.scss */
+/* line 21, ../sass/_page.scss */
 .page .row .columns.full-width .column {
   float: none;
 }
-/* line 20, ../sass/_page.scss */
+/* line 23, ../sass/_page.scss */
 .page .row .columns.half .first-column {
   width: 48%;
   margin-right: 2%;
 }
-/* line 21, ../sass/_page.scss */
+/* line 24, ../sass/_page.scss */
 .page .row .columns.one-quarter .first-column {
   width: 23%;
   margin-right: 2%;
 }
-/* line 22, ../sass/_page.scss */
+/* line 25, ../sass/_page.scss */
 .page .row .columns.three-quarter .first-column {
   width: 73%;
   margin-right: 2%;
 }
-/* line 23, ../sass/_page.scss */
+/* line 26, ../sass/_page.scss */
 .page .row .columns.quarters .column {
   width: 23%;
   margin-right: 2%;
 }
 @media screen and (max-width: 1400px) {
-  /* line 36, ../sass/_page.scss */
+  /* line 39, ../sass/_page.scss */
   .page .row .columns.quarters .column {
     width: 48%;
   }
-  /* line 38, ../sass/_page.scss */
+  /* line 41, ../sass/_page.scss */
   .page .row .columns.quarters .column:nth-child(2n+1) {
     clear: left;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 52, ../sass/_page.scss */
+  /* line 55, ../sass/_page.scss */
   .page .row .columns.quarters .column {
     width: 100%;
     float: none;

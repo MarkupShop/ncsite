@@ -3,8 +3,11 @@
 
 	.row{
 		@include pie-clearfix;
+		clear: both;
 		
 		.columns{
+			clear: both;
+			@include pie-clearfix;
 
 			.column{
 				float: left;
