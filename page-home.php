@@ -9,13 +9,15 @@ $sponsors = new WP_Query( array('post_type' => 'slides') );
 
 // The Loop
 if ( $sponsors->have_posts() ) {
-	echo '<section class="slideshow">';
-	echo '<div class="slideshow-texture">';
-	echo '<div class="wrapper">';
+	
+	$c = 0;
 
 	while ( $sponsors->have_posts() ) {
 		$sponsors->the_post();
-
+		if($c == 0){ $class = ' active'; }else{ $class = ''; }
+	echo '<section class="slideshow' . $class .'" style="background-image: url(' . get_field('image') . ');">';
+	echo '<div class="slideshow-texture">';
+	echo '<div class="wrapper">';
 		echo '<div class="slideshow-content">';
 		echo '<h2 class="slideshow-title">'.get_the_title().'</h2>';
 		echo '<p class="slideshow-excerpt">'.get_field('slide_text').'</p>';
@@ -27,10 +29,14 @@ if ( $sponsors->have_posts() ) {
 		}
 		echo '<a href="'.$link.'">Read More</a>';
 		echo '</div>';
-	}
 	echo '</div><!--.wrapper-->';
 	echo '</div><!--.slideshow-texture-->';
 	echo '</section><!--.slideshow-->';
+	$c++;
+	
+	
+	}
+
 } else {
 		// no posts found
 }
@@ -49,6 +55,8 @@ wp_reset_postdata();
 			<div class="cutout-overlay">
 				<a class="button" href="#">Member Log In</a>
 			</div>
+
+			<?php the_field('primary_content'); /*
 		
 			<h2 class="content-title">NC Transportation Professionals</h2>
 		
@@ -62,7 +70,7 @@ wp_reset_postdata();
 			operation, and management of transportation facilities and equipment for the safe, convenient, and efficient 
 			movement of people and goods. The NCSITE membership includes a broad range of transportation personnel--engineers, 
 			planners, educators, administrators, and technicians. Many modes of transportation are represented in the 
-			organization's membership.</p>
+			organization's membership.</p>*/?>
 
 		</div><!--.main-content-->
 
@@ -153,14 +161,16 @@ wp_reset_postdata();
 
 		<h2 class="content-title">Meet the President</h2>
 
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/president.jpg" />
+		<img src="<?php the_field('mtp_photo'); ?>" />
 
 		<div class="president-content">
-	
-			<h3>Christa Greene, PE</h3>
-	
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 
+			<h3><?php the_field('mtp_name'); ?></h3>
+
+			<?php the_field('mtp_text'); ?>
+
+	
+			
 		</div>
 	
 		
