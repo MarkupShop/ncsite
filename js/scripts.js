@@ -17,16 +17,44 @@ $( document ).ready(function(){
 
 	}
 
-	
+	function changeSlideFirst(){
+		$('.slideshow.active').removeClass('active');
+		$('.slideshow:first').addClass('active');
+	}
+
+	function changeSlideLast(){
+		$('.slideshow.active').removeClass('active');
+		$('.slideshow:last').addClass('active');
+	}
+
+	var slideCount = 0;
+	var slides = $('.slideshow').length;
 
 	$('.slideshow .arrow-right').click(function(){
 		event.preventDefault();
-		console.log('clicked');
-		changeSliderNext();
+		if(slideCount == slides){
+			changeSlideFirst();
+			slideCount = 0;
+		}else{
+			changeSliderNext();
+			slideCount++;
+		}
+		
+		
+	});
+
+	$('.slideshow .arrow-left').click(function(){
+		event.preventDefault();
+		if(slideCount == 0){
+			changeSlideLast();
+			slideCount = slides;
+		}else{
+			changeSliderPrev();
+			slideCount--;
+		}
+		
 	});
 
 	
-
-	//j('.slideshow').removeClass('active');
 
 });
