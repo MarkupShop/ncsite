@@ -27,7 +27,7 @@ $( document ).ready(function(){
 		$('.slideshow:last').addClass('active');
 	}
 
-	var slideCount = 0;
+	var slideCount = 1;
 	var slides = $('.slideshow').length;
 
 	$('.slideshow .arrow-right').click(function(){
@@ -47,7 +47,7 @@ $( document ).ready(function(){
 
 	$('.slideshow .arrow-left').click(function(){
 		event.preventDefault();
-		if(slideCount == 0){
+		if(slideCount == 1){
 			slideCount = slides;
 			changeSlideLast();
 		}else{
