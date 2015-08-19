@@ -28,6 +28,7 @@ if ( $sponsors->have_posts() ) {
 			$link = get_field('external_content_link');
 		}
 		echo '<a href="'.$link.'">Read More</a>';
+		echo '<a class="arrow-left" href="#">Previous Slide</a><a class="arrow-right" href="#">Next Slide</a>';
 		echo '</div>';
 	echo '</div><!--.wrapper-->';
 	echo '</div><!--.slideshow-texture-->';

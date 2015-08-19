@@ -726,20 +726,48 @@ footer .column li {
   position: relative;
   color: #fff;
 }
-/* line 28, ../sass/_home.scss */
+/* line 27, ../sass/_home.scss */
+.home .slideshow .slideshow-content .arrow-left, .home .slideshow .slideshow-content .arrow-right {
+  text-indent: -9999em;
+  display: block;
+  position: absolute;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  opacity: .7;
+  -webkit-transition: opacity, 0.5s;
+  -moz-transition: opacity, 0.5s;
+  -o-transition: opacity, 0.5s;
+  transition: opacity, 0.5s;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+/* line 39, ../sass/_home.scss */
+.home .slideshow .slideshow-content .arrow-left:hover, .home .slideshow .slideshow-content .arrow-right:hover {
+  opacity: 1;
+}
+/* line 44, ../sass/_home.scss */
+.home .slideshow .slideshow-content .arrow-left {
+  background-image: url(../assets/slider-arrow-left.jpg);
+}
+/* line 48, ../sass/_home.scss */
+.home .slideshow .slideshow-content .arrow-right {
+  background-image: url(../assets/slider-arrow-right.jpg);
+}
+/* line 55, ../sass/_home.scss */
 .home .slideshow .slideshow-title {
   font-family: "Open Sans";
   font-weight: 600;
   margin-bottom: 1em;
   font-size: 1.4em;
 }
-/* line 35, ../sass/_home.scss */
+/* line 62, ../sass/_home.scss */
 .home .slideshow .slideshow-progress {
   margin-top: -2.5em;
   text-align: center;
   margin-bottom: 1em;
 }
-/* line 40, ../sass/_home.scss */
+/* line 67, ../sass/_home.scss */
 .home .slideshow .slideshow-progress li {
   display: inline-block;
   text-indent: -9999em;
@@ -749,11 +777,11 @@ footer .column li {
   margin: 0;
   padding: 0;
 }
-/* line 49, ../sass/_home.scss */
+/* line 76, ../sass/_home.scss */
 .home .slideshow .slideshow-progress li.active {
   background-position-x: -14px;
 }
-/* line 55, ../sass/_home.scss */
+/* line 82, ../sass/_home.scss */
 .home .slideshow a {
   padding: 1em;
   background: #e6e7e8;
@@ -768,12 +796,12 @@ footer .column li {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 66, ../sass/_home.scss */
+/* line 93, ../sass/_home.scss */
 .home .slideshow a:hover {
   color: #10244b;
   background: #cbced0;
 }
-/* line 73, ../sass/_home.scss */
+/* line 100, ../sass/_home.scss */
 .home .content {
   background: #f1f1f1 url("../assets/home-content-bg.png") no-repeat bottom left;
   border-bottom: 4px solid #cc3333;
@@ -786,26 +814,26 @@ footer .column li {
   display: table;
   clear: both;
 }
-/* line 80, ../sass/_home.scss */
+/* line 107, ../sass/_home.scss */
 .home .main-content {
   width: 49.322033898305%;
   float: left;
   padding: 2em 8% 2em 2%;
 }
-/* line 85, ../sass/_home.scss */
+/* line 112, ../sass/_home.scss */
 .home .main-content .content-title {
   margin-top: 3.5%;
 }
-/* line 89, ../sass/_home.scss */
+/* line 116, ../sass/_home.scss */
 .home .main-content h2, .home .main-content h3, .home .main-content p {
   color: #153f60;
 }
-/* line 94, ../sass/_home.scss */
+/* line 121, ../sass/_home.scss */
 .home .sidebar-content {
   width: 40.677966101695%;
   float: right;
 }
-/* line 99, ../sass/_home.scss */
+/* line 126, ../sass/_home.scss */
 .home .cutout-overlay {
   margin-top: -5.5em;
   height: 56px;
@@ -813,52 +841,52 @@ footer .column li {
   width: 300%;
   margin-left: -184%;
 }
-/* line 107, ../sass/_home.scss */
+/* line 134, ../sass/_home.scss */
 .home .cutout-overlay .button {
   float: right;
 }
-/* line 112, ../sass/_home.scss */
+/* line 139, ../sass/_home.scss */
 .home .events {
   background: #396eb6;
   padding: 5%;
   position: relative;
   color: #fff;
 }
-/* line 118, ../sass/_home.scss */
+/* line 145, ../sass/_home.scss */
 .home .events .event-title {
   text-transform: uppercase;
 }
-/* line 122, ../sass/_home.scss */
+/* line 149, ../sass/_home.scss */
 .home .events .event {
   margin-bottom: 1em;
 }
-/* line 125, ../sass/_home.scss */
+/* line 152, ../sass/_home.scss */
 .home .events .event .button {
   margin-top: 1em;
   position: relative;
   float: right;
   right: -5.5%;
 }
-/* line 133, ../sass/_home.scss */
+/* line 160, ../sass/_home.scss */
 .home .events .more-events {
   margin-top: 6em;
 }
-/* line 136, ../sass/_home.scss */
+/* line 163, ../sass/_home.scss */
 .home .events .more-events a {
   color: #fff;
   text-decoration: none;
 }
-/* line 141, ../sass/_home.scss */
+/* line 168, ../sass/_home.scss */
 .home .events .more-events li {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 147, ../sass/_home.scss */
+/* line 174, ../sass/_home.scss */
 .home .events .more-events .event-title {
   margin-bottom: 1.5em;
 }
-/* line 153, ../sass/_home.scss */
+/* line 180, ../sass/_home.scss */
 .home .become-a-member {
   background: #1d2c5e;
   padding: 5% 5% 0;
@@ -866,36 +894,36 @@ footer .column li {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 160, ../sass/_home.scss */
+/* line 187, ../sass/_home.scss */
 .home .become-a-member .button {
   margin-top: 1em;
   position: relative;
   float: right;
   right: -5.5%;
 }
-/* line 168, ../sass/_home.scss */
+/* line 195, ../sass/_home.scss */
 .home .sponsors {
   padding: 3em 0;
   overflow: hidden;
   *zoom: 1;
   border-bottom: 4px solid #cc3333;
 }
-/* line 173, ../sass/_home.scss */
+/* line 200, ../sass/_home.scss */
 .home .sponsors .wrapper {
   position: relative;
 }
-/* line 177, ../sass/_home.scss */
+/* line 204, ../sass/_home.scss */
 .home .sponsors .button {
   position: absolute;
   top: 0;
   right: 0;
   margin-top: -1em;
 }
-/* line 184, ../sass/_home.scss */
+/* line 211, ../sass/_home.scss */
 .home .sponsors .logos {
   padding-top: 1em;
 }
-/* line 187, ../sass/_home.scss */
+/* line 214, ../sass/_home.scss */
 .home .sponsors .logos li {
   float: left;
   width: 14%;
@@ -903,15 +931,15 @@ footer .column li {
   padding: 0;
   margin: 2em 5.5%;
 }
-/* line 194, ../sass/_home.scss */
+/* line 221, ../sass/_home.scss */
 .home .sponsors .logos li:nth-child(4n+1) {
   clear: left;
 }
-/* line 198, ../sass/_home.scss */
+/* line 225, ../sass/_home.scss */
 .home .sponsors .logos li img {
   width: 100%;
 }
-/* line 204, ../sass/_home.scss */
+/* line 231, ../sass/_home.scss */
 .home .president {
   padding: 3em 0;
   background: #f1f1f1;
@@ -919,23 +947,23 @@ footer .column li {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 210, ../sass/_home.scss */
+/* line 237, ../sass/_home.scss */
 .home .president .president-content {
   float: right;
   width: 85%;
 }
-/* line 215, ../sass/_home.scss */
+/* line 242, ../sass/_home.scss */
 .home .president img {
   float: left;
   width: 12%;
   margin-right: 3%;
 }
 @media screen and (max-width: 860px) {
-  /* line 225, ../sass/_home.scss */
+  /* line 252, ../sass/_home.scss */
   .home .slideshow {
     background: #fff;
   }
-  /* line 228, ../sass/_home.scss */
+  /* line 255, ../sass/_home.scss */
   .home .slideshow .slideshow-content {
     float: none;
     position: static;
@@ -945,37 +973,37 @@ footer .column li {
     box-sizing: border-box;
     background: #cc3333;
   }
-  /* line 238, ../sass/_home.scss */
+  /* line 265, ../sass/_home.scss */
   .home .slideshow .slideshow-progress {
     display: none;
   }
-  /* line 243, ../sass/_home.scss */
+  /* line 270, ../sass/_home.scss */
   .home .sidebar-content, .home .main-content {
     float: none;
     width: 100%;
   }
-  /* line 248, ../sass/_home.scss */
+  /* line 275, ../sass/_home.scss */
   .home .cutout-overlay {
     margin: 0 0 2em;
     width: 100%;
     height: auto;
     text-align: right;
   }
-  /* line 254, ../sass/_home.scss */
+  /* line 281, ../sass/_home.scss */
   .home .cutout-overlay .button {
     float: none;
   }
-  /* line 258, ../sass/_home.scss */
+  /* line 285, ../sass/_home.scss */
   .home .president img {
     width: 22%;
   }
-  /* line 262, ../sass/_home.scss */
+  /* line 289, ../sass/_home.scss */
   .home .president .president-content {
     width: 75%;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 273, ../sass/_home.scss */
+  /* line 300, ../sass/_home.scss */
   .home .sponsors .button {
     position: static;
     margin-top: 1em;
@@ -983,19 +1011,19 @@ footer .column li {
   }
 }
 @media screen and (max-width: 400px) {
-  /* line 284, ../sass/_home.scss */
+  /* line 311, ../sass/_home.scss */
   .home .president img {
     width: 80%;
     margin: 0 auto 1em;
     float: none;
     display: block;
   }
-  /* line 291, ../sass/_home.scss */
+  /* line 318, ../sass/_home.scss */
   .home .president .president-content {
     width: 100%;
     text-align: center;
   }
-  /* line 298, ../sass/_home.scss */
+  /* line 325, ../sass/_home.scss */
   .home .content-title {
     text-align: center;
     font-size: 1.75em;

@@ -23,6 +23,33 @@
 			padding: 2em 2%;
 			position: relative;
 			color: #fff;
+
+			.arrow-left, .arrow-right{
+				text-indent: -9999em;
+				display: block;
+				position: absolute;
+				top: 50%;
+				height: 50px;
+				width: 50px;
+				opacity: .7;
+				@include transition(opacity, .5s);
+				background-position: 0 0;
+				background-repeat: no-repeat;
+
+				&:hover{
+					opacity: 1;
+				}
+			}
+
+			.arrow-left{
+				background-image: url(../assets/slider-arrow-left.jpg);
+			}
+
+			.arrow-right{
+				background-image: url(../assets/slider-arrow-right.jpg);
+			}
+
+
 		}
 	
 		.slideshow-title{
