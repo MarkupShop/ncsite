@@ -40,6 +40,8 @@ $( document ).ready(function(){
 			changeSliderNext();
 		}
 		
+		console.log(slideCount);
+		console.log(slides);
 		
 	});
 
@@ -52,6 +54,8 @@ $( document ).ready(function(){
 			slideCount--;
 			changeSliderPrev();
 		}
+		console.log(slideCount);
+		console.log(slides);
 		
 	});
 
