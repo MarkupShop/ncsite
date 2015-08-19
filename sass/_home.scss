@@ -5,6 +5,7 @@
 		background-size: cover;
 		@include clearfix;
 		display: none;
+		background-position: center;
 
 		&.active{
 			display: block;
