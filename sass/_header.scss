@@ -58,6 +58,23 @@
 
 	.sub-menu{
 		display: none;
+
+		li{
+			display: block;
+			margin: 0;
+			padding: 0;
+		}
+
+		&.active{
+			display: block;
+    		position: absolute;
+    		bottom: -6em;
+    		left: 0;
+    		padding: 2em;
+    		text-align: left;
+    		background: #fff;
+    		border-top: 0;
+		}
 	}
 
 	ul{
