@@ -30,6 +30,8 @@ button, .button{
 	font-weight: 600;
 	text-decoration: none;
 	@include transition( background-color .5s);
+	width: 160px;
+	text-align: center;
 
 	&:after{
 		display: inline-block;

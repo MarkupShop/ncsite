@@ -2,9 +2,13 @@
 	overflow: hidden;
 
 	.slideshow{
-		background: url('../assets/slider-bg.jpg') no-repeat center;
 		background-size: cover;
 		@include clearfix;
+		display: none;
+
+		&.active{
+			display: block;
+		}
 	
 		.slideshow-texture{
 			background: url('../assets/slideshow-filter.png');
