@@ -30,7 +30,15 @@
 		
 			<nav class="primary-nav">
 				<ul>
-					<? wp_nav_menu('main_menu'); ?>
+					<? wp_nav_menu(
+						array(
+							'menu' => 'main_menu',
+							// do not fall back to first non-empty menu
+							'theme_location' => '__no_such_location',
+							// do not fall back to wp_page_menu()
+							'fallback_cb' => false
+							)
+						); ?>
 					<?php get_search_form(); ?>
 				</ul>
 			</nav><!--.primary-nav-->
