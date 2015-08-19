@@ -13,7 +13,7 @@
 	
 			<h4>Email Us</h4>
 			<ul>
-				<? wp_nav_menu('email'); ?>
+				<? wp_nav_menu( array( 'theme_location' => 'email' )); ?>
 			</ul>
 
 		</div>
@@ -22,7 +22,7 @@
 
 			<h4>Connect with NCSITE</h4>
 			<ul>
-				<? wp_nav_menu('connect'); ?>
+				<? wp_nav_menu( array( 'theme_location' => 'connect' )); ?>
 			</ul>
 
 			<h4><a href="#">Become a Member</a></h4>
@@ -35,7 +35,7 @@
 
 			<h4>National ITE</h4>
 			<ul>
-				<? wp_nav_menu('national_ite'); ?>
+				<? wp_nav_menu( array( 'theme_location' => 'national_ite')); ?>
 			</ul>
 
 			<h4>ITE Contact</h4>
@@ -50,7 +50,7 @@
 
 			<h4>Transportation Resources</h4>
 			<ul>
-				<? wp_nav_menu('transportation_resources'); ?>
+				<? wp_nav_menu( array( 'theme_location' => 'transportation_resources')); ?>
 				<h4><a href="#">See all Resources</a></h4>
 			</ul>
 
