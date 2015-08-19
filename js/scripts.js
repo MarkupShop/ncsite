@@ -33,7 +33,7 @@ $( document ).ready(function(){
 	$('.slideshow .arrow-right').click(function(){
 		event.preventDefault();
 		if(slideCount == slides){
-			slideCount = 0;
+			slideCount = 1;
 			changeSlideFirst();
 		}else{
 			slideCount++;
