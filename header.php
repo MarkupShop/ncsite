@@ -32,7 +32,7 @@
 				<ul>
 					<? wp_nav_menu(
 						array(
-							'menu' => 'main_menu',
+							'menu' => 'Main Navigation',
 							// do not fall back to first non-empty menu
 							'theme_location' => '__no_such_location',
 							// do not fall back to wp_page_menu()
