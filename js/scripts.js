@@ -1,5 +1,3 @@
-var $ = jQuery.noConflict();
-
 $( document ).ready(function(){
 
 
@@ -22,9 +20,9 @@ $( document ).ready(function(){
 	
 
 	$('.slideshow .next-arrow').click(function(){
+		event.preventDefault();
 		console.log('clicked');
 		changeSliderNext();
-		return false;
 	});
 
 	
