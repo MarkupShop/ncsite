@@ -6,10 +6,10 @@ add_theme_support( 'html5', array( 'search-form' ) );
 
 register_nav_menus( array(
     'main-menu' =>'Menu of top-level pages for NCSITE',
-    'footer_menu_1' => 'First footer menu.',
-    'footer_menu_2' => 'Second footer menu.',
-    'footer_menu_3' => 'Third footer menu.',
-    'footer_menu_4' => 'Fourth footer menu.'
+    'email' => 'Email Us',
+    'connect' => 'Connect with NCSITE',
+    'national_ite' => 'National ITE',
+    'transportation_resources' => 'Transportation Resources'
 ));
 
 
