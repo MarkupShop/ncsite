@@ -70,7 +70,7 @@
 
 <?php do_action('wp_footer'); ?>
 <script type="text/javascript" src="<?php echo bloginfo('template_directory'); ?>/js/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="<?php echo bloginfo('template_directory'); ?>/js/scripts.js<?php echo '?v=' . filemtime( bloginfo('template_directory') . '/js/scripts.js' ); ?>"></script>
+<script type="text/javascript" src="<?php echo bloginfo('template_directory') . '/js/scripts.js?v=' . filemtime( bloginfo('template_directory') . '/js/scripts.js' ); ?>"></script>
 
 </body>
 
