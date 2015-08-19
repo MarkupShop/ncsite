@@ -1031,6 +1031,7 @@ footer .column li {
 /* line 8, ../sass/_page.scss */
 .page .row .columns {
   clear: both;
+  margin: 2em 0;
   *zoom: 1;
 }
 /* line 38, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
@@ -1039,51 +1040,55 @@ footer .column li {
   display: table;
   clear: both;
 }
-/* line 12, ../sass/_page.scss */
+/* line 13, ../sass/_page.scss */
+.page .row .columns h3 {
+  margin: 2em 0;
+}
+/* line 17, ../sass/_page.scss */
 .page .row .columns .column {
   float: left;
 }
-/* line 15, ../sass/_page.scss */
+/* line 20, ../sass/_page.scss */
 .page .row .columns .column .wp-caption, .page .row .columns .column img {
   width: 100% !important;
   height: auto;
 }
-/* line 21, ../sass/_page.scss */
+/* line 26, ../sass/_page.scss */
 .page .row .columns.full-width .column {
   float: none;
 }
-/* line 23, ../sass/_page.scss */
+/* line 28, ../sass/_page.scss */
 .page .row .columns.half .first-column {
   width: 48%;
   margin-right: 2%;
 }
-/* line 24, ../sass/_page.scss */
+/* line 29, ../sass/_page.scss */
 .page .row .columns.one-quarter .first-column {
   width: 23%;
   margin-right: 2%;
 }
-/* line 25, ../sass/_page.scss */
+/* line 30, ../sass/_page.scss */
 .page .row .columns.three-quarter .first-column {
   width: 73%;
   margin-right: 2%;
 }
-/* line 26, ../sass/_page.scss */
+/* line 31, ../sass/_page.scss */
 .page .row .columns.quarters .column {
   width: 23%;
   margin-right: 2%;
 }
 @media screen and (max-width: 1400px) {
-  /* line 39, ../sass/_page.scss */
+  /* line 44, ../sass/_page.scss */
   .page .row .columns.quarters .column {
     width: 48%;
   }
-  /* line 41, ../sass/_page.scss */
+  /* line 46, ../sass/_page.scss */
   .page .row .columns.quarters .column:nth-child(2n+1) {
     clear: left;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 55, ../sass/_page.scss */
+  /* line 60, ../sass/_page.scss */
   .page .row .columns.quarters .column {
     width: 100%;
     float: none;
