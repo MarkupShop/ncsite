@@ -30,7 +30,7 @@
 		
 			<nav class="primary-nav">
 				<ul>
-					<? wp_nav_menu(); ?>
+					<? wp_nav_menu('main-menu'); ?>
 					<?php get_search_form(); ?>
 				</ul>
 			</nav><!--.primary-nav-->
