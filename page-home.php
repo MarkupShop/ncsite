@@ -129,7 +129,7 @@ wp_reset_postdata();
 /* SPONSORS LOGOS CUSTOM QUERY */
 
 // The Query
-$sponsors = new WP_Query( array('post_type' => 'sponsors', 'meta_key' => 'active_sponsor', 'meta_value' => 'true') );
+$sponsors = new WP_Query( array('post_type' => 'sponsors', 'meta_key' => 'active_sponsor', 'meta_value' => '1') );
 
 // The Loop
 if ( $sponsors->have_posts() ) {
