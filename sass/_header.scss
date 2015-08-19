@@ -65,15 +65,17 @@
 			padding: 0;
 		}
 
-		&.active{
-			display: block;
-    		position: absolute;
-    		bottom: -6em;
-    		left: 0;
-    		padding: 2em;
-    		text-align: left;
-    		background: #fff;
-    		border-top: 0;
+		.menu-item-has-children:hover{
+			.sub-menu{
+				display: block;
+    			position: absolute;
+    			bottom: -6em;
+    			left: -1.4em;
+    			padding: 2em;
+    			text-align: left;
+    			background: #fff;
+    			border-top: 0;
+			}
 		}
 	}
 
