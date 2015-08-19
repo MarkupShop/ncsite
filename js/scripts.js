@@ -8,12 +8,14 @@ $( document ).ready(function(){
 
 
 		$('.slideshow.active').removeClass('active').next().addClass('active');
+		return false;
 		
 	}
 
 	function changeSliderPrev(){
 
 		$('.slideshow.active').removeClass('active').prev().addClass('active');
+		return false;
 
 	}
 
