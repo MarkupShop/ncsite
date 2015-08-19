@@ -28,8 +28,9 @@
 				text-indent: -9999em;
 				display: block;
 				position: absolute;
-				top: 50%;
+				top: 45%;
 				height: 50px;
+				padding: 0;
 				width: 50px;
 				opacity: .7;
 				@include transition(opacity, .5s);
@@ -43,9 +44,11 @@
 
 			.arrow-left{
 				background-image: url(../assets/slider-arrow-left.jpg);
+				left: -45px;
 			}
 
 			.arrow-right{
+				right: -45px;
 				background-image: url(../assets/slider-arrow-right.jpg);
 			}
 
