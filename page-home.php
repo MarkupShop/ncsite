@@ -140,7 +140,7 @@ if ( $sponsors->have_posts() ) {
 
 	while ( $sponsors->have_posts() ) {
 		$sponsors->the_post();
-		echo '<li><img src=' . get_field('sponsor_logo') . ' alt="' . get_field('sponsor_name') . '" /></li>';
+		echo '<li><a href="' . get_field('sponsor_link') . '"><img src=' . get_field('sponsor_logo') . ' alt="' . get_field('sponsor_name') . '" /></a></li>';
 	}
 	echo '</ul>';
 	echo '<a class="button">Sponsor NCSITE</a>';
