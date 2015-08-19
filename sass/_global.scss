@@ -203,37 +203,6 @@ button, .button{
 		padding-bottom: 2em;
 	}
 
-	.profile-card{
-		background: #999;
-		color: #153f60;
-		width: 47%;
-		margin-right: 3%;
-
-
-		img{
-			float: left;
-			width: 50%;
-		}
-
-		dl{
-			text-align: center;
-			padding-top: 2em;
-		}
-
-		.position{
-			text-transform: uppercase;
-			font-weight: bold;
-		}
-
-		.name{
-			border-bottom: 1px dashed #153f60;
-			display: inline-block;
-			padding-bottom: .5em;
-			margin-bottom: .5em;
-		}
-
-	}
-
 	.profile-text{
 		padding-left: 50%;
 		width: 50%;
@@ -287,6 +256,7 @@ button, .button{
 
 .profile_card{
 	max-width: 200px; 
+	margin: 0 auto;
 
 	img{
 		width: 100%;
