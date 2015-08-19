@@ -33,11 +33,11 @@ $( document ).ready(function(){
 	$('.slideshow .arrow-right').click(function(){
 		event.preventDefault();
 		if(slideCount == slides){
-			changeSlideFirst();
 			slideCount = 0;
+			changeSlideFirst();
 		}else{
-			changeSliderNext();
 			slideCount++;
+			changeSliderNext();
 		}
 		
 		
@@ -46,11 +46,11 @@ $( document ).ready(function(){
 	$('.slideshow .arrow-left').click(function(){
 		event.preventDefault();
 		if(slideCount == 0){
-			changeSlideLast();
 			slideCount = slides;
+			changeSlideLast();
 		}else{
-			changeSliderPrev();
 			slideCount--;
+			changeSliderPrev();
 		}
 		
 	});
