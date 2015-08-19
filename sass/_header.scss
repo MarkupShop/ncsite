@@ -58,6 +58,7 @@
 
 	.sub-menu{
 		display: none;
+		@include(all .5s);
 
 		li{
 			display: block;
