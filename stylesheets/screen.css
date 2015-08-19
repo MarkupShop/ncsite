@@ -542,7 +542,7 @@ strong {
 .primary-nav .menu-item-has-children:hover .sub-menu {
   display: block;
   position: absolute;
-  bottom: -5em;
+  bottom: -5.5em;
   left: -1.4em;
   padding: 2em;
   text-align: left;
