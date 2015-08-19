@@ -5,7 +5,7 @@ add_theme_support( 'html5', array( 'search-form' ) );
 /* ADD MENU SUPPORT */
 
 register_nav_menus( array(
-    'main-menu' =>'Menu of top-level pages for NCSITE',
+    'main_menu' => 'Menu of top-level pages for NCSITE',
     'email' => 'Email Us',
     'connect' => 'Connect with NCSITE',
     'national_ite' => 'National ITE',
