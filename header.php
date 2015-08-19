@@ -34,7 +34,7 @@
 						array(
 							'menu' => 'Main Navigation',
 							// do not fall back to first non-empty menu
-							'theme_location' => '__no_such_location',
+							'theme_location' => 'main_menu',
 							// do not fall back to wp_page_menu()
 							'fallback_cb' => false
 							)
