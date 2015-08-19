@@ -58,7 +58,13 @@
 
 	.sub-menu{
 		display: none;
-		@include transition(all .5s);
+    	position: absolute;
+    	bottom: -5.5em;
+    	left: -1.4em;
+    	padding: 2em;
+    	text-align: left;
+    	background: #fff;
+    	border-top: 0;
 
 		li{
 			display: block;
@@ -72,13 +78,6 @@
 	.menu-item-has-children:hover{
 			.sub-menu{
 				display: block;
-    			position: absolute;
-    			bottom: -5.5em;
-    			left: -1.4em;
-    			padding: 2em;
-    			text-align: left;
-    			background: #fff;
-    			border-top: 0;
 			}
 		}
 
