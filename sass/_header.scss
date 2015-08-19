@@ -59,12 +59,13 @@
 	.sub-menu{
 		display: none;
     	position: absolute;
-    	bottom: -5.5em;
+    	top: 1.6em;
     	left: -1.4em;
     	padding: 2em;
     	text-align: left;
     	background: #fff;
     	border-top: 0;
+    	z-index: 9999;
 
 		li{
 			display: block;
