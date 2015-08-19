@@ -4,7 +4,13 @@ add_theme_support( 'html5', array( 'search-form' ) );
 
 /* ADD MENU SUPPORT */
 
-register_nav_menu( 'main-menu', 'Menu of top-level pages for NCSITE' );
+register_nav_menus( array(
+    'main-menu', 'Menu of top-level pages for NCSITE',
+    'footer_menu_1', 'First footer menu.',
+    'footer_menu_2', 'Second footer menu.',
+    'footer_menu_3', 'Third footer menu.',
+    'footer_menu_4', 'Fourth footer menu.'
+));
 
 
 
