@@ -1189,3 +1189,8 @@ footer .column li {
 .archive article .article-info .post-categories li a:hover, .blog article .article-info .post-categories li a:hover {
   text-decoration: underline;
 }
+
+/* line 5, ../sass/_memberpress.scss */
+.mp_wrapper {
+  font-family: "open sans", sans-serif;
+}
