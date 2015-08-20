@@ -88,7 +88,7 @@ img {
 }
 
 /* line 23, ../sass/_global.scss */
-button, .button {
+button, .button, .mepr-submit {
   display: inline-block;
   padding: 1.25em 2em;
   background: #cc3333 !important;
@@ -105,7 +105,7 @@ button, .button {
   text-align: center;
 }
 /* line 36, ../sass/_global.scss */
-button:after, .button:after {
+button:after, .button:after, .mepr-submit:after {
   display: inline-block;
   content: '';
   height: 16px;
@@ -116,7 +116,7 @@ button:after, .button:after {
   top: 2px;
 }
 /* line 48, ../sass/_global.scss */
-button:hover, .button:hover {
+button:hover, .button:hover, .mepr-submit:hover {
   background: #ec1313 !important;
 }
 
@@ -172,7 +172,7 @@ button:hover, .button:hover {
   color: #fff;
 }
 /* line 94, ../sass/_global.scss */
-.sub-nav .button {
+.sub-nav .button, .sub-nav .mepr-submit {
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 1em;
@@ -344,7 +344,7 @@ button:hover, .button:hover {
     width: 15%;
   }
   /* line 251, ../sass/_global.scss */
-  .sub-nav .button {
+  .sub-nav .button, .sub-nav .mepr-submit {
     display: inline-block;
     width: 25%;
   }
@@ -664,7 +664,7 @@ footer h3 {
   margin-bottom: 1em;
 }
 /* line 11, ../sass/_footer.scss */
-footer .button {
+footer .button, footer .mepr-submit {
   background: #fff;
   color: #eb1414;
   margin-top: 2em;
@@ -846,7 +846,7 @@ footer .column li {
   margin-left: -184%;
 }
 /* line 138, ../sass/_home.scss */
-.home .cutout-overlay .button {
+.home .cutout-overlay .button, .home .cutout-overlay .mepr-submit {
   float: right;
 }
 /* line 143, ../sass/_home.scss */
@@ -865,7 +865,7 @@ footer .column li {
   margin-bottom: 1em;
 }
 /* line 156, ../sass/_home.scss */
-.home .events .event .button {
+.home .events .event .button, .home .events .event .mepr-submit {
   margin-top: 1em;
   position: relative;
   float: right;
@@ -899,7 +899,7 @@ footer .column li {
   *zoom: 1;
 }
 /* line 191, ../sass/_home.scss */
-.home .become-a-member .button {
+.home .become-a-member .button, .home .become-a-member .mepr-submit {
   margin-top: 1em;
   position: relative;
   float: right;
@@ -917,7 +917,7 @@ footer .column li {
   position: relative;
 }
 /* line 208, ../sass/_home.scss */
-.home .sponsors .button {
+.home .sponsors .button, .home .sponsors .mepr-submit {
   position: absolute;
   top: 0;
   right: 0;
@@ -994,7 +994,7 @@ footer .column li {
     text-align: right;
   }
   /* line 285, ../sass/_home.scss */
-  .home .cutout-overlay .button {
+  .home .cutout-overlay .button, .home .cutout-overlay .mepr-submit {
     float: none;
   }
   /* line 289, ../sass/_home.scss */
@@ -1008,7 +1008,7 @@ footer .column li {
 }
 @media screen and (max-width: 600px) {
   /* line 304, ../sass/_home.scss */
-  .home .sponsors .button {
+  .home .sponsors .button, .home .sponsors .mepr-submit {
     position: static;
     margin-top: 1em;
     float: right;
