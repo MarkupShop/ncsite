@@ -25,8 +25,8 @@
 				<? wp_nav_menu( array( 'theme_location' => 'connect' )); ?>
 			</ul>
 
-			<h4><a href="#">Become a Member</a></h4>
-			<h4><a href="#">Host a Meeting</a></h4>
+			<h4><a href="/membership/">Become a Member</a></h4>
+			<h4><a href="/membership/get-involved/">Get Involved</a></h4>
 			<h4><a href="#">Jobs Board</a></li>
 
 		</div>
@@ -51,7 +51,7 @@
 			<h4>Transportation Resources</h4>
 			<ul>
 				<? wp_nav_menu( array( 'theme_location' => 'transportation_resources')); ?>
-				<h4><a href="#">See all Resources</a></h4>
+				<h4><a href="/resources-2/">See all Resources</a></h4>
 			</ul>
 
 		</div>
