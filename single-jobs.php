@@ -17,13 +17,13 @@ include('breadcrumbs.php');
 <section class="main-content">
 
 
-<h2 class="page-title"><?php the_field('job_title'); ?></h2>
+<h2 class="page-title"><?php the_title(); ?></h2>
 
 <section class="row">
 
 	<h3><?php the_field('organization_name'); ?></h3>
 
-	<?php the_field('job_description'); ?>
+	<?php the_content(); ?>
 
 </section>
 
