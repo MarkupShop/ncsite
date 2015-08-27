@@ -19,10 +19,10 @@
 
 				<div class="wrapper">
 					<ul>
-						<li>Contact Us</li>
-						<li>Member Login</li>
-						<li class="tab">Jobs Board</li>
-						<li class="tab">Contact Us</li>
+						<li><a href="mailto:info@ncsite.org">Contact Us</a></li>
+						<li><a href="/memberhsip">Member Login</a></li>
+						<li><a href="http://ncsite.org/2015/08/jobs-listings/">Jobs Board</a></li>
+						<!--<li class="tab">Contact Us</li>-->
 					</ul>
 				</div>
 				
