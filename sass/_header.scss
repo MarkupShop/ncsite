@@ -32,6 +32,8 @@
 		list-style: none;
 		line-height: 1.4em;
 
+		a{ text-decoration: none; }
+
 		&.tab{
 			background: $blue;
 			padding: 1em 1em .25em;

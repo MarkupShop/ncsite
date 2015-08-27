@@ -27,7 +27,7 @@
 
 			<h4><a href="/membership/">Become a Member</a></h4>
 			<h4><a href="/membership/get-involved/">Get Involved</a></h4>
-			<h4><a href="#">Jobs Board</a></li>
+			<h4><a href="http://ncsite.org/2015/08/jobs-listings/">Jobs Board</a></li>
 
 		</div>
 
