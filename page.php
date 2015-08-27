@@ -5,7 +5,7 @@
 	if( get_field('custom_header_image') != null ){ 
 		$backgroundURL = get_field('custom_header_image'); 
 	}else{
-		$backgroundURL = get_template_directory_uri() . 'assets/page-bg.png';
+		$backgroundURL = get_template_directory_uri() . '/assets/page-bg.png';
 	}
 ?>
 <section class="banner" style="background-image: url( <?php echo $backgroundURL; ?> );">
