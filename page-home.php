@@ -96,7 +96,15 @@ wp_reset_postdata();
 
 					*/ ?>
 
-					<h3 class="event-title">A list of events will be listed here soon.</h3>
+					<h3 class="event-title">TUE SEP 22, 2015: STRATEGIC INITIATIVES COUNCIL MEETING</h3>
+
+					<p>Join us for a day of learning about hot and emerging transportation topics— what’s trending! We’ll be talking about what’s new and different, automated vehicles, drones, and much more!</p>
+					<p>NCSU MCKIMMON CENTER, SEPTEMBER 22, 2015. 10:00AM–3:35PM</p>
+					<p>Space is Limited!</p>
+
+					<a href="http://events.r20.constantcontact.com/register/event?oeidk=a07ebg9o7ky9b40ec0c&llr=f75vhqjab&showPage=true" class="button">Register Now &amp; See the Agenda</a>
+
+					
 			
 				</div><!--.event-->
 
