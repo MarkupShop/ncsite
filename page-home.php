@@ -185,12 +185,8 @@ wp_reset_postdata();
 
 			<?php the_field('mtp_text'); ?>
 
-	
-			
 		</div>
 	
-		
-
 	</div><!--.wrapper-->
 
 </section><!--.president-->
