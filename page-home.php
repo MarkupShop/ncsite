@@ -54,7 +54,7 @@ wp_reset_postdata();
 		<div class="main-content">
 
 			<div class="cutout-overlay">
-				<a class="button" href="#">Member Log In</a>
+				<a class="button" href="/membership">Member Log In</a>
 			</div>
 
 			<?php the_field('primary_content'); /*
