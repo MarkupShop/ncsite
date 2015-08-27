@@ -83,6 +83,7 @@ wp_reset_postdata();
 			
 				<div class="event">
 			
+					<?php /*
 					<h3 class="event-title">Wed Jun 24, 2015: Annual Meeting</h3>
 			
 					<p>We invite all transportation engineers and planners, 
@@ -92,17 +93,23 @@ wp_reset_postdata();
 					fellowship. <a href="#">More&raquo;</a></p>
 			
 					<a href="#" class="button">Register Now</a>
+
+					*/ ?>
+
+					<h3 class="event-title">A list of events will be listed here soon.</h3>
 			
 				</div><!--.event-->
 
 				<div class="more-events">
-			
+					<?php /*
 					<h3 class="event-title">More Events</h3>
 			
 					<ul>
 						<li><a href="#"><h3 class="event-title">MAY 14 2015: Signal Systems Users Group&nbsp;&raquo;</h3></a></li>
 						<li><a href="#"><h3 class="event-title">MAY 27 2015: SIMCAP USERS GROUP&nbsp;&raquo;</h3></a></li>
 					</ul>
+
+					*/ ?>
 
 				</div><!--.more-events-->
 			
@@ -114,7 +121,7 @@ wp_reset_postdata();
 			
 				<p>Join today to support the work of this volunteer organization and to receive member benefits and discounts to events.</p>
 			
-				<a class="button" href="#">Join NCSITE</a>
+				<a class="button" href="http://ncsite.org/membership">Join NCSITE</a>
 			
 			</div><!--.become-a-member-->
 
@@ -141,7 +148,7 @@ if ( $sponsors->have_posts() ) {
 
 	while ( $sponsors->have_posts() ) {
 		$sponsors->the_post();
-		echo '<li><a href="' . get_field('sponsor_link') . '"><img src=' . get_field('sponsor_logo') . ' alt="' . get_field('sponsor_name') . '" /></a></li>';
+		echo '<li><a href="' . get_field('sponsor_link') . '" target="_blank"><img src=' . get_field('sponsor_logo') . ' alt="' . get_field('sponsor_name') . '" /></a></li>';
 	}
 	echo '</ul>';
 	echo '<a class="button">Sponsor NCSITE</a>';

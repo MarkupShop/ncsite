@@ -31,7 +31,7 @@
 			<nav class="primary-nav">
 				<ul>
 					<? wp_nav_menu( array( 'theme_location' => 'main_menu' )); ?>
-					<?php get_search_form(); ?>
+					<?php //get_search_form(); ?>
 				</ul>
 			</nav><!--.primary-nav-->
 
