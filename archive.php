@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="banner" style="background-image: url('/ncsite/wp-content/themes/ncsite/assets/page-bg.png');">
+<section class="banner" style="background-image: url('/wordpress/wp-content/themes/ncsite/assets/page-bg.png');">
 	<div class="banner-filter"></div>
 </section><!--.banner-->
 
