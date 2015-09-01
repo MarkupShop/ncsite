@@ -1,84 +1,1224 @@
-/*
-Syntax error: Invalid CSS after "  		position": expected ";", was ": relative;"
-        on line 176 of /Applications/MAMP/htdocs/ncsite/wp-content/themes/ncsite/sass/_global.scss
-        from line 9 of /Applications/MAMP/htdocs/ncsite/wp-content/themes/ncsite/sass/screen.scss
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(http://fonts.googleapis.com/css?family=Raleway:100,200);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700italic,700,300,600);
+/* line 17, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
-Backtrace:
-/Applications/MAMP/htdocs/ncsite/wp-content/themes/ncsite/sass/_global.scss:176
-/Applications/MAMP/htdocs/ncsite/wp-content/themes/ncsite/sass/screen.scss:9
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1147:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1085:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1080:in `tok!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:586:in `block in declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1123:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1123:in `rethrow'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:592:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:554:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:546:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:535:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:529:in `ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:553:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:546:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:82:in `stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:27:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:342:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:274:in `to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:225:in `visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/root_node.rb:20:in `render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:139:in `block (2 levels) in compile'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:138:in `block in compile'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/logger.rb:45:in `red'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:137:in `compile'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:118:in `compile_if_required'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `each'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `block in run'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/compiler.rb:100:in `run'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/commands/watch_project.rb:147:in `recompile'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `each'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block in run'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `loop'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `run'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
-/Library/Ruby/Gems/2.0.0/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/commands/watch_project.rb:87:in `perform'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/commands/base.rb:18:in `execute'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/commands/project_base.rb:19:in `execute'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/bin/compass:30:in `block in <top (required)>'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/bin/compass:44:in `call'
-/Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/bin/compass:44:in `<top (required)>'
-/usr/bin/compass:23:in `load'
-/usr/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"  		position\": expected \";\", was \": relative;\"\A         on line 176 of /Applications/MAMP/htdocs/ncsite/wp-content/themes/ncsite/sass/_global.scss\A         from line 9 of /Applications/MAMP/htdocs/ncsite/wp-content/themes/ncsite/sass/screen.scss"; }
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* GLOBAL VARIABLES */
+/* END VARIABLES */
+/* line 10, ../sass/_global.scss */
+body {
+  color: #10244b;
+}
+
+/* line 14, ../sass/_global.scss */
+img {
+  vertical-align: bottom;
+}
+
+/* line 18, ../sass/_global.scss */
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 23, ../sass/_global.scss */
+button, .button, .mepr-submit {
+  display: inline-block;
+  padding: 1.25em 2em;
+  background: #cc3333 !important;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Open Sans";
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  width: 160px;
+  text-align: center;
+}
+/* line 36, ../sass/_global.scss */
+button:after, .button:after, .mepr-submit:after {
+  display: inline-block;
+  content: '';
+  height: 16px;
+  width: 15px;
+  background: url(../assets/button-arrow.png) no-repeat 0 0;
+  margin-left: .5em;
+  position: relative;
+  top: 2px;
+}
+/* line 48, ../sass/_global.scss */
+button:hover, .button:hover, .mepr-submit:hover {
+  background: #ec1313 !important;
+}
+
+/* line 53, ../sass/_global.scss */
+.float-left {
+  float: left;
+}
+
+/* line 57, ../sass/_global.scss */
+.self-clear {
+  *zoom: 1;
+}
+/* line 38, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.self-clear:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 61, ../sass/_global.scss */
+.row {
+  padding: 2em 30% 2em 10%;
+  background: #fff;
+  border-bottom: 4px solid #cc3333;
+}
+/* line 66, ../sass/_global.scss */
+.row:nth-child(2n-1) {
+  background: #e6e7e8;
+}
+
+@media screen and (max-width: 1415px) {
+  /* line 73, ../sass/_global.scss */
+  .wrapper {
+    width: 95%;
+  }
+
+  /* line 77, ../sass/_global.scss */
+  .wpb_row {
+    padding: 2em 25% 2em 5%;
+  }
+}
+/* Interior Page/Post Styles */
+/* line 85, ../sass/_global.scss */
+.sub-nav {
+  background: #396eb6;
+  color: #fff;
+  width: 15%;
+  position: absolute;
+  right: 10%;
+}
+/* line 92, ../sass/_global.scss */
+.sub-nav a {
+  color: #fff;
+}
+/* line 94, ../sass/_global.scss */
+.sub-nav .button, .sub-nav .mepr-submit {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1em;
+  text-align: center;
+}
+/* line 101, ../sass/_global.scss */
+.sub-nav .links {
+  padding: 1em;
+}
+/* line 105, ../sass/_global.scss */
+.sub-nav .current_page_item {
+  font-weight: 800;
+}
+/* line 109, ../sass/_global.scss */
+.sub-nav .children {
+  margin-left: 1em;
+  font-size: .8em;
+}
+/* line 113, ../sass/_global.scss */
+.sub-nav .children li {
+  margin: .5em 0;
+}
+/* line 118, ../sass/_global.scss */
+.sub-nav li {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 .5em;
+}
+/* line 123, ../sass/_global.scss */
+.sub-nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 127, ../sass/_global.scss */
+.sub-nav li a:hover {
+  text-decoration: underline;
+}
+
+/* line 135, ../sass/_global.scss */
+.banner {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 143, ../sass/_global.scss */
+.banner .banner-filter {
+  width: 100%;
+  height: 100%;
+  background: url("../assets/slideshow-filter.png") repeat;
+}
+
+/* line 149, ../sass/_global.scss */
+.promo-image {
+  width: 100%;
+}
+
+/* line 153, ../sass/_global.scss */
+.breadcrumbs {
+  background: #e6e7e8;
+  padding-top: 2em;
+  font-size: .8em;
+  padding-bottom: 6em;
+  font-family: "Open Sans", sans-serif;
+}
+/* line 160, ../sass/_global.scss */
+.breadcrumbs ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 .25em;
+}
+/* line 166, ../sass/_global.scss */
+.breadcrumbs a {
+  text-decoration: none;
+}
+
+/* line 169, ../sass/_global.scss */
+.page-title {
+  width: 60%;
+  margin-left: -25%;
+  background: #fff;
+  padding: 1em 0 0 35%;
+  margin-top: -1.5em;
+  margin-bottom: 0 !important;
+  position: relative;
+}
+
+/* line 179, ../sass/_global.scss */
+.page-section {
+  background: #fff;
+  padding: 2em 0;
+  border-bottom: 4px solid #cc3333;
+}
+/* line 184, ../sass/_global.scss */
+.page-section .wrapper {
+  padding-left: 6em;
+}
+/* line 188, ../sass/_global.scss */
+.page-section p, .page-section ul {
+  width: 60%;
+}
+/* line 192, ../sass/_global.scss */
+.page-section.bg-gray {
+  background: #e6e7e8;
+}
+/* line 195, ../sass/_global.scss */
+.page-section.full-width p, .page-section.full-width ul {
+  width: 90%;
+}
+
+/* line 202, ../sass/_global.scss */
+.profile {
+  *zoom: 1;
+  padding-bottom: 2em;
+}
+/* line 38, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.profile:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 207, ../sass/_global.scss */
+.profile-text {
+  padding-left: 50%;
+  width: 50%;
+}
+
+/* line 212, ../sass/_global.scss */
+.profile-stack {
+  float: left;
+  color: #153f60;
+  width: 22%;
+  margin-right: 3%;
+  margin-bottom: 3%;
+}
+/* line 219, ../sass/_global.scss */
+.profile-stack img {
+  width: 100%;
+}
+/* line 223, ../sass/_global.scss */
+.profile-stack dl {
+  text-align: center;
+}
+/* line 227, ../sass/_global.scss */
+.profile-stack .position {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 1em;
+}
+/* line 233, ../sass/_global.scss */
+.profile-stack .name {
+  border-bottom: 1px dashed #153f60;
+  display: inline-block;
+  padding-bottom: .5em;
+  margin-bottom: .5em;
+}
+
+@media screen and (max-width: 1250px) {
+  /* line 243, ../sass/_global.scss */
+  .sub-nav {
+    width: 100%;
+    position: static;
+  }
+  /* line 247, ../sass/_global.scss */
+  .sub-nav ul li {
+    display: inline-block;
+    width: 15%;
+  }
+  /* line 252, ../sass/_global.scss */
+  .sub-nav .button, .sub-nav .mepr-submit {
+    display: inline-block;
+    width: 25%;
+  }
+}
+/* line 258, ../sass/_global.scss */
+.profile_card {
+  max-width: 200px;
+  margin: 0 auto;
+}
+/* line 262, ../sass/_global.scss */
+.profile_card img {
+  width: 100%;
+  margin-bottom: 1em;
+}
+/* line 267, ../sass/_global.scss */
+.profile_card dl {
+  text-align: center;
+}
+/* line 270, ../sass/_global.scss */
+.profile_card dl .title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 271, ../sass/_global.scss */
+.profile_card dl .name {
+  border-bottom: 1px dashed;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+/* line 4, ../sass/_fonts.scss */
+h2 {
+  font-family: "Raleway";
+  line-height: 1.4em;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 2.25em;
+  margin-bottom: 0.5em !important;
+}
+
+/* line 13, ../sass/_fonts.scss */
+h3 {
+  font-family: "Open Sans";
+  font-weight: 600;
+  line-height: 1.4em;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+/* line 21, ../sass/_fonts.scss */
+h4 {
+  font-family: "Open Sans";
+  margin: 1em 0 .5em;
+  font-weight: 400;
+  line-height: 1.4em;
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+/* line 30, ../sass/_fonts.scss */
+p, dl, em, span {
+  line-height: 1.4em;
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+/* line 35, ../sass/_fonts.scss */
+p + p, p + ul, dl + p, dl + ul, em + p, em + ul, span + p, span + ul {
+  margin-top: 1.4em;
+}
+
+/* line 40, ../sass/_fonts.scss */
+li {
+  line-height: 1.8em;
+  font-family: "Open Sans";
+  font-weight: 300;
+  list-style: disc;
+  margin-left: 3em;
+  padding-left: .5em;
+}
+
+/* line 49, ../sass/_fonts.scss */
+p, li {
+  max-width: 800px;
+}
+
+/* line 51, ../sass/_fonts.scss */
+a {
+  color: #396eb6;
+}
+
+/* line 55, ../sass/_fonts.scss */
+em {
+  font-style: italic;
+  font-weight: 100;
+}
+
+/* line 60, ../sass/_fonts.scss */
+strong {
+  font-weight: bold;
+  font-size: .9em;
+}
+
+/* line 65, ../sass/_fonts.scss */
+.content-title, .page-title {
+  font-family: "Raleway";
+  text-transform: uppercase;
+  font-size: 2.25em;
+  margin-bottom: 1em;
+}
+
+/* line 1, ../sass/_header.scss */
+.site-header {
+  padding-top: 22px;
+  *zoom: 1;
+  border-bottom: 20px solid #14214a;
+  padding-bottom: 2px;
+}
+/* line 38, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.site-header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 8, ../sass/_header.scss */
+.site-title {
+  background: url("../assets/ncsite-logo.png") no-repeat 0 0;
+  text-indent: -9999em;
+  height: 90px;
+  width: 239px;
+  float: left;
+}
+
+/* line 16, ../sass/_header.scss */
+.utility-nav {
+  background: #e6e7e8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 100%;
+}
+/* line 24, ../sass/_header.scss */
+.utility-nav ul {
+  float: right;
+}
+/* line 27, ../sass/_header.scss */
+.utility-nav ul li {
+  float: left;
+  text-transform: lowercase;
+  margin-left: 1.5em;
+  font-size: .9em;
+  list-style: none;
+  line-height: 1.4em;
+}
+/* line 35, ../sass/_header.scss */
+.utility-nav ul li a {
+  text-decoration: none;
+}
+/* line 37, ../sass/_header.scss */
+.utility-nav ul li.tab {
+  background: #396eb6;
+  padding: 1em 1em .25em;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+/* line 44, ../sass/_header.scss */
+.utility-nav ul li.tab a {
+  color: #fff;
+}
+/* line 46, ../sass/_header.scss */
+.utility-nav ul li.tab:hover {
+  background: #1b69d4;
+}
+
+/* line 53, ../sass/_header.scss */
+.primary-nav {
+  float: right;
+}
+/* line 56, ../sass/_header.scss */
+.primary-nav > ul > li {
+  padding-bottom: 1em;
+}
+/* line 61, ../sass/_header.scss */
+.primary-nav .menu-main-menu-container {
+  display: inline-block;
+}
+/* line 63, ../sass/_header.scss */
+.primary-nav .sub-menu {
+  display: none;
+  position: absolute;
+  top: 1.6em;
+  left: -1.4em;
+  padding: 2em;
+  text-align: left;
+  background: #fff;
+  border-top: 0;
+  z-index: 9999;
+}
+/* line 74, ../sass/_header.scss */
+.primary-nav .sub-menu li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+/* line 84, ../sass/_header.scss */
+.primary-nav .menu-item-has-children:hover .sub-menu {
+  display: block;
+}
+/* line 92, ../sass/_header.scss */
+.primary-nav ul li {
+  display: inline-block;
+  margin-top: 3em;
+  margin-left: 2.5em;
+  position: relative;
+  text-transform: uppercase;
+}
+/* line 99, ../sass/_header.scss */
+.primary-nav ul li a {
+  color: #396eb6;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 104, ../sass/_header.scss */
+.primary-nav ul li a:hover {
+  color: #10244b;
+}
+/* line 111, ../sass/_header.scss */
+.primary-nav ul li:hover .dropdown {
+  display: block;
+}
+/* line 115, ../sass/_header.scss */
+.primary-nav ul li .dropdown:hover {
+  display: block;
+}
+/* line 120, ../sass/_header.scss */
+.primary-nav ul .dropdown {
+  position: absolute;
+  padding: 1em;
+  width: 100%;
+  min-width: 150px;
+  display: none;
+  top: 2em;
+  background: white url("../assets/dropdown-top.png") no-repeat 0 0;
+  left: -.75em;
+  z-index: 999;
+}
+/* line 132, ../sass/_header.scss */
+.primary-nav ul .dropdown li {
+  color: #333;
+  display: block;
+  margin: 0;
+  position: static;
+}
+/* line 140, ../sass/_header.scss */
+.primary-nav ul .search-form {
+  display: inline-block;
+  margin-left: 2.5em;
+}
+/* line 144, ../sass/_header.scss */
+.primary-nav ul .search-form input[type="text"] {
+  border: 1px solid #396eb6;
+  padding: 4px;
+  font-size: 1em;
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+/* line 152, ../sass/_header.scss */
+.primary-nav ul .search-form input[type="submit"] {
+  border: none;
+  background: #fff;
+  color: #396eb6;
+  font-family: "Open Sans";
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 1200px) {
+  /* line 167, ../sass/_header.scss */
+  .site-title {
+    float: none;
+    margin: 0 auto;
+  }
+
+  /* line 172, ../sass/_header.scss */
+  .primary-nav ul {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /* line 177, ../sass/_header.scss */
+  .primary-nav ul li {
+    margin-left: 1.5em;
+  }
+}
+@media screen and (max-width: 860px) {
+  /* line 185, ../sass/_header.scss */
+  .primary-nav, .utility-nav {
+    display: none;
+  }
+}
+/* line 1, ../sass/_footer.scss */
+footer {
+  background: #535454;
+  padding: 3em 0;
+  color: #fff;
+  *zoom: 1;
+}
+/* line 38, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 7, ../sass/_footer.scss */
+footer h3 {
+  margin-bottom: 1em;
+}
+/* line 11, ../sass/_footer.scss */
+footer .button, footer .mepr-submit {
+  background: #fff;
+  color: #eb1414;
+  margin-top: 2em;
+}
+/* line 17, ../sass/_footer.scss */
+footer .column {
+  width: 18%;
+  margin: 0 1%;
+  float: left;
+}
+/* line 22, ../sass/_footer.scss */
+footer .column p {
+  margin: .5em 0;
+}
+/* line 26, ../sass/_footer.scss */
+footer .column a {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 30, ../sass/_footer.scss */
+footer .column a:hover {
+  color: #cc3333;
+}
+/* line 35, ../sass/_footer.scss */
+footer .column li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 1, ../sass/_home.scss */
+.home {
+  overflow: hidden;
+}
+/* line 4, ../sass/_home.scss */
+.home .slideshow {
+  background-size: cover;
+  overflow: hidden;
+  *zoom: 1;
+  display: none;
+  background-position: center;
+}
+/* line 10, ../sass/_home.scss */
+.home .slideshow.active {
+  display: block;
+}
+/* line 14, ../sass/_home.scss */
+.home .slideshow .slideshow-texture {
+  background: url("../assets/slideshow-filter.png");
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 19, ../sass/_home.scss */
+.home .slideshow .slideshow-content {
+  background: rgba(125, 5, 5, 0.8);
+  float: right;
+  width: 36.677966101695%;
+  margin: 150px 0;
+  padding: 2em 2%;
+  position: relative;
+  color: #fff;
+}
+/* line 28, ../sass/_home.scss */
+.home .slideshow .slideshow-content .arrow-left, .home .slideshow .slideshow-content .arrow-right {
+  text-indent: -9999em;
+  display: block;
+  position: absolute;
+  top: 35%;
+  height: 50px;
+  padding: 0;
+  width: 50px;
+  opacity: .7;
+  -webkit-transition: opacity, 0.5s;
+  -moz-transition: opacity, 0.5s;
+  -o-transition: opacity, 0.5s;
+  transition: opacity, 0.5s;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+/* line 41, ../sass/_home.scss */
+.home .slideshow .slideshow-content .arrow-left:hover, .home .slideshow .slideshow-content .arrow-right:hover {
+  opacity: 1;
+}
+/* line 46, ../sass/_home.scss */
+.home .slideshow .slideshow-content .arrow-left {
+  background-image: url(../assets/slider-arrow-left.jpg);
+  left: -45px;
+}
+/* line 51, ../sass/_home.scss */
+.home .slideshow .slideshow-content .arrow-right {
+  right: -45px;
+  background-image: url(../assets/slider-arrow-right.jpg);
+}
+/* line 59, ../sass/_home.scss */
+.home .slideshow .slideshow-title {
+  font-family: "Open Sans";
+  font-weight: 600;
+  margin-bottom: 1em;
+  font-size: 1.4em;
+}
+/* line 66, ../sass/_home.scss */
+.home .slideshow .slideshow-progress {
+  margin-top: -2.5em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+/* line 71, ../sass/_home.scss */
+.home .slideshow .slideshow-progress li {
+  display: inline-block;
+  text-indent: -9999em;
+  background: url("../assets/slider-progress-sprite.png") no-repeat 0 0;
+  height: 14px;
+  width: 14px;
+  margin: 0;
+  padding: 0;
+}
+/* line 80, ../sass/_home.scss */
+.home .slideshow .slideshow-progress li.active {
+  background-position-x: -14px;
+}
+/* line 86, ../sass/_home.scss */
+.home .slideshow a {
+  padding: 1em;
+  background: #e6e7e8;
+  color: #cc3333;
+  display: inline-block;
+  margin-top: 1em;
+  text-decoration: none;
+  font-family: 'Raleway';
+  float: right;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 97, ../sass/_home.scss */
+.home .slideshow a:hover {
+  color: #10244b;
+  background: #cbced0;
+}
+/* line 104, ../sass/_home.scss */
+.home .content {
+  background: #f1f1f1 url("../assets/home-content-bg.png") no-repeat bottom left;
+  border-bottom: 4px solid #cc3333;
+  background-size: cover;
+  *zoom: 1;
+}
+/* line 38, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.home .content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 111, ../sass/_home.scss */
+.home .main-content {
+  width: 49.322033898305%;
+  float: left;
+  padding: 2em 8% 2em 2%;
+}
+/* line 116, ../sass/_home.scss */
+.home .main-content .content-title {
+  margin-top: 3.5%;
+}
+/* line 120, ../sass/_home.scss */
+.home .main-content h2, .home .main-content h3, .home .main-content p {
+  color: #153f60;
+}
+/* line 125, ../sass/_home.scss */
+.home .sidebar-content {
+  width: 40.677966101695%;
+  float: right;
+}
+/* line 130, ../sass/_home.scss */
+.home .cutout-overlay {
+  margin-top: -5.5em;
+  height: 56px;
+  background: #f1f1f1;
+  width: 300%;
+  margin-left: -184%;
+}
+/* line 138, ../sass/_home.scss */
+.home .cutout-overlay .button, .home .cutout-overlay .mepr-submit {
+  float: right;
+}
+/* line 143, ../sass/_home.scss */
+.home .events {
+  background: #396eb6;
+  padding: 5%;
+  position: relative;
+  color: #fff;
+}
+/* line 149, ../sass/_home.scss */
+.home .events .event-title {
+  text-transform: uppercase;
+}
+/* line 153, ../sass/_home.scss */
+.home .events .event {
+  margin-bottom: 1em;
+}
+/* line 156, ../sass/_home.scss */
+.home .events .event .button, .home .events .event .mepr-submit {
+  margin-top: 1em;
+  position: relative;
+  float: right;
+  right: -5.5%;
+}
+/* line 164, ../sass/_home.scss */
+.home .events .more-events {
+  margin-top: 6em;
+}
+/* line 167, ../sass/_home.scss */
+.home .events .more-events a {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 172, ../sass/_home.scss */
+.home .events .more-events li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 178, ../sass/_home.scss */
+.home .events .more-events .event-title {
+  margin-bottom: 1.5em;
+}
+/* line 184, ../sass/_home.scss */
+.home .become-a-member {
+  background: #1d2c5e;
+  padding: 5% 5% 0;
+  color: #fff;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 191, ../sass/_home.scss */
+.home .become-a-member .button, .home .become-a-member .mepr-submit {
+  margin-top: 1em;
+  position: relative;
+  float: right;
+  right: -5.5%;
+}
+/* line 199, ../sass/_home.scss */
+.home .sponsors {
+  padding: 3em 0;
+  overflow: hidden;
+  *zoom: 1;
+  border-bottom: 4px solid #cc3333;
+}
+/* line 204, ../sass/_home.scss */
+.home .sponsors .wrapper {
+  position: relative;
+}
+/* line 208, ../sass/_home.scss */
+.home .sponsors .button, .home .sponsors .mepr-submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: -1em;
+}
+/* line 215, ../sass/_home.scss */
+.home .sponsors .logos {
+  padding-top: 1em;
+}
+/* line 218, ../sass/_home.scss */
+.home .sponsors .logos li {
+  float: left;
+  width: 14%;
+  list-style: none;
+  padding: 0;
+  margin: 2em 5.5%;
+}
+/* line 225, ../sass/_home.scss */
+.home .sponsors .logos li:nth-child(4n+1) {
+  clear: left;
+}
+/* line 229, ../sass/_home.scss */
+.home .sponsors .logos li img {
+  width: 100%;
+}
+/* line 235, ../sass/_home.scss */
+.home .president {
+  padding: 3em 0;
+  background: #f1f1f1;
+  border-bottom: 4px solid #cc3333;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 241, ../sass/_home.scss */
+.home .president .president-content {
+  float: right;
+  width: 85%;
+}
+/* line 246, ../sass/_home.scss */
+.home .president img {
+  float: left;
+  width: 12%;
+  margin-right: 3%;
+}
+@media screen and (max-width: 860px) {
+  /* line 256, ../sass/_home.scss */
+  .home .slideshow {
+    background: #fff;
+  }
+  /* line 259, ../sass/_home.scss */
+  .home .slideshow .slideshow-content {
+    float: none;
+    position: static;
+    width: 110%;
+    margin: 0 0 0 -5%;
+    padding: 4em 2em;
+    box-sizing: border-box;
+    background: #cc3333;
+  }
+  /* line 269, ../sass/_home.scss */
+  .home .slideshow .slideshow-progress {
+    display: none;
+  }
+  /* line 274, ../sass/_home.scss */
+  .home .sidebar-content, .home .main-content {
+    float: none;
+    width: 100%;
+  }
+  /* line 279, ../sass/_home.scss */
+  .home .cutout-overlay {
+    margin: 0 0 2em;
+    width: 100%;
+    height: auto;
+    text-align: right;
+  }
+  /* line 285, ../sass/_home.scss */
+  .home .cutout-overlay .button, .home .cutout-overlay .mepr-submit {
+    float: none;
+  }
+  /* line 289, ../sass/_home.scss */
+  .home .president img {
+    width: 22%;
+  }
+  /* line 293, ../sass/_home.scss */
+  .home .president .president-content {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 304, ../sass/_home.scss */
+  .home .sponsors .button, .home .sponsors .mepr-submit {
+    position: static;
+    margin-top: 1em;
+    float: right;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 315, ../sass/_home.scss */
+  .home .president img {
+    width: 80%;
+    margin: 0 auto 1em;
+    float: none;
+    display: block;
+  }
+  /* line 322, ../sass/_home.scss */
+  .home .president .president-content {
+    width: 100%;
+    text-align: center;
+  }
+  /* line 329, ../sass/_home.scss */
+  .home .content-title {
+    text-align: center;
+    font-size: 1.75em;
+  }
+}
+
+/* line 1, ../sass/_page.scss */
+.page {
+  background: #e6e7e8;
+}
+/* line 4, ../sass/_page.scss */
+.page .row {
+  *zoom: 1;
+  clear: both;
+}
+/* line 38, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.page .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 8, ../sass/_page.scss */
+.page .row .columns {
+  clear: both;
+  margin: 2em 0;
+  *zoom: 1;
+}
+/* line 38, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.page .row .columns:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 13, ../sass/_page.scss */
+.page .row .columns h3 {
+  margin: 2em 0;
+}
+/* line 17, ../sass/_page.scss */
+.page .row .columns .column {
+  float: left;
+}
+/* line 20, ../sass/_page.scss */
+.page .row .columns .column .wp-caption, .page .row .columns .column img {
+  width: 100% !important;
+  height: auto;
+}
+/* line 26, ../sass/_page.scss */
+.page .row .columns.full-width .column {
+  float: none;
+}
+/* line 28, ../sass/_page.scss */
+.page .row .columns.half .first-column {
+  width: 48%;
+  margin-right: 2%;
+}
+/* line 29, ../sass/_page.scss */
+.page .row .columns.one-quarter .first-column {
+  width: 23%;
+  margin-right: 2%;
+}
+/* line 30, ../sass/_page.scss */
+.page .row .columns.one-quarter .second-column {
+  width: 75%;
+}
+/* line 31, ../sass/_page.scss */
+.page .row .columns.three-quarter .first-column {
+  width: 73%;
+  margin-right: 2%;
+}
+/* line 32, ../sass/_page.scss */
+.page .row .columns.three-quarter .second-column {
+  width: 25%;
+}
+/* line 33, ../sass/_page.scss */
+.page .row .columns.quarters .column {
+  width: 23%;
+  margin-right: 2%;
+}
+/* line 34, ../sass/_page.scss */
+.page .row .columns.first-half .first-column {
+  width: 48%;
+  margin-right: 2%;
+}
+/* line 35, ../sass/_page.scss */
+.page .row .columns.first-half .column {
+  width: 23%;
+  margin-right: 2%;
+}
+/* line 36, ../sass/_page.scss */
+.page .row .columns.last-half .fourth-column {
+  width: 50%;
+}
+/* line 37, ../sass/_page.scss */
+.page .row .columns.last-half .column {
+  width: 23%;
+  margin-right: 2%;
+}
+@media screen and (max-width: 1200px) {
+  /* line 50, ../sass/_page.scss */
+  .page .row .columns.quarters .column {
+    width: 48%;
+  }
+  /* line 52, ../sass/_page.scss */
+  .page .row .columns.quarters .column:nth-child(2n+1) {
+    clear: left;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 66, ../sass/_page.scss */
+  .page .row .columns.quarters .column {
+    width: 100%;
+    float: none;
+  }
+}
+
+/* line 4, ../sass/_post.scss */
+.post .featured-image {
+  width: 25%;
+  float: left;
+  margin-right: 2em;
+  margin-bottom: 1em;
+}
+/* line 12, ../sass/_post.scss */
+.post .post-meta {
+  margin-bottom: 1em;
+  font-size: .8em;
+  font-style: italic;
+}
+
+/* line 3, ../sass/_archive.scss */
+.archive article, .blog article {
+  border-bottom: 1px dashed #aaa;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+/* line 8, ../sass/_archive.scss */
+.archive article:last-child, .blog article:last-child {
+  border: none;
+  padding-bottom: 0;
+}
+/* line 13, ../sass/_archive.scss */
+.archive article .featured-image, .blog article .featured-image {
+  width: 25%;
+  float: left;
+  margin-right: 2em;
+  margin-bottom: 1em;
+}
+/* line 20, ../sass/_archive.scss */
+.archive article .article-info, .blog article .article-info {
+  margin-bottom: 1em;
+}
+/* line 23, ../sass/_archive.scss */
+.archive article .article-info .article-title, .blog article .article-info .article-title {
+  margin: 0;
+}
+/* line 26, ../sass/_archive.scss */
+.archive article .article-info .article-title a, .blog article .article-info .article-title a {
+  text-decoration: none;
+}
+/* line 29, ../sass/_archive.scss */
+.archive article .article-info .article-title a:hover, .blog article .article-info .article-title a:hover {
+  text-decoration: underline;
+}
+/* line 37, ../sass/_archive.scss */
+.archive article .article-info .post-categories li, .blog article .article-info .post-categories li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-transform: none;
+  font-size: .8em;
+}
+/* line 44, ../sass/_archive.scss */
+.archive article .article-info .post-categories li a, .blog article .article-info .post-categories li a {
+  color: #333;
+  text-decoration: none;
+}
+/* line 48, ../sass/_archive.scss */
+.archive article .article-info .post-categories li a:hover, .blog article .article-info .post-categories li a:hover {
+  text-decoration: underline;
+}
+
+/* line 5, ../sass/_memberpress.scss */
+.mp_wrapper {
+  font-family: "open sans", sans-serif;
+}
