@@ -1114,18 +1114,37 @@ footer .column li {
   width: 23%;
   margin-right: 2%;
 }
+/* line 34, ../sass/_page.scss */
+.page .row .columns.first-half .first-column {
+  width: 48%;
+  margin-right: 2%;
+}
+/* line 35, ../sass/_page.scss */
+.page .row .columns.first-half .column {
+  width: 23%;
+  margin-right: 2%;
+}
+/* line 36, ../sass/_page.scss */
+.page .row .columns.last-half .fourth-column {
+  width: 50%;
+}
+/* line 37, ../sass/_page.scss */
+.page .row .columns.last-half .column {
+  width: 23%;
+  margin-right: 2%;
+}
 @media screen and (max-width: 1200px) {
-  /* line 46, ../sass/_page.scss */
+  /* line 50, ../sass/_page.scss */
   .page .row .columns.quarters .column {
     width: 48%;
   }
-  /* line 48, ../sass/_page.scss */
+  /* line 52, ../sass/_page.scss */
   .page .row .columns.quarters .column:nth-child(2n+1) {
     clear: left;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 62, ../sass/_page.scss */
+  /* line 66, ../sass/_page.scss */
   .page .row .columns.quarters .column {
     width: 100%;
     float: none;

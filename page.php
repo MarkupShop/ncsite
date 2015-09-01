@@ -43,8 +43,8 @@ foreach( $sections as $section ){
 				echo '<div class="column first-column">'.$columns['first_column'].'</div>';
 
 				if( $columns['second_column'] != null ){ echo '<div class="column second-column">'.$columns['second_column'].'</div>'; }
-				if( $columns['third_column'] != null ){ echo '<div class="column">'.$columns['third_column'].'</div>'; }
-				if( $columns['fourth_column'] != null ){ echo '<div class="column">'.$columns['fourth_column'].'</div>'; }
+				if( $columns['third_column'] != null ){ echo '<div class="column third-column">'.$columns['third_column'].'</div>'; }
+				if( $columns['fourth_column'] != null ){ echo '<div class="column fourth-column">'.$columns['fourth_column'].'</div>'; }
 
 			echo '</div>';
 		}

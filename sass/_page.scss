@@ -31,6 +31,10 @@
 			&.three-quarter .first-column{ width: 73%; margin-right: 2%; }
 			&.three-quarter .second-column { width: 25%; }
 			&.quarters .column{ width: 23%; margin-right: 2%; }
+			&.first-half .first-column{ width: 48%; margin-right: 2%; }
+			&.first-half .column{ width: 23%; margin-right: 2%; }
+			&.last-half .fourth-column{ width: 50%;}
+			&.last-half .column{ width: 23%; margin-right: 2%; }
 			
 		}
 	}
