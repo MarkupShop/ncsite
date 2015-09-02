@@ -26,6 +26,7 @@
 			&.full-width .column{ float: none; }
 
 			&.half .first-column{ width: 48%; margin-right: 2%; }
+			&.half .second-column{ width: 50%; }
 			&.one-quarter .first-column{ width: 23%; margin-right: 2%; }
 			&.one-quarter .second-column{ width: 75%; }
 			&.three-quarter .first-column{ width: 73%; margin-right: 2%; }

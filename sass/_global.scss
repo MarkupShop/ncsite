@@ -199,6 +199,19 @@ button, .button{
 
 	}
 
+	table, .tablepress{
+		margin: 2em 0;
+		font-family: "open sans";
+
+		th{
+			font-weight: 400;
+		}
+
+		td{
+			font-weight: 100;
+		}
+	}
+
 	.profile{
 		@include pie-clearfix;
 		padding-bottom: 2em;

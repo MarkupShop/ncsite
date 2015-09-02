@@ -21,7 +21,7 @@
 					<ul>
 						<li><a href="mailto:info@ncsite.org">Contact Us</a></li>
 						<li><a href="/memberhsip">Member Login</a></li>
-						<li class="tab"><a href="http://ncsite.org/2015/08/jobs-listings/">Jobs Board</a></li>
+						<li class="tab"><a href="<?php echo bloginfo('url'); ?>/category/jobs-board/">Jobs Board</a></li>
 						<!--<li class="tab">Contact Us</li>-->
 					</ul>
 				</div>

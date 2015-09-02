@@ -18,7 +18,7 @@ include('breadcrumbs.php');
 	<h2 class="page-title">
 		<?php if(is_archive()){
 			single_cat_title(); 
-		}else{ echo "Blog"; } ?></h2>
+		}else{ echo "Involver Blog"; } ?></h2>
 
 	<section class="row">
 
